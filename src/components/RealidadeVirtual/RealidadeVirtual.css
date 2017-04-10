@@ -1,0 +1,12 @@
+.rv-title {
+  font-size: 3em;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 400px;
+  font-family: 'Anton', sans-serif;
+}
+
+.rv-container {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}

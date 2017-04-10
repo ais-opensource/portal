@@ -1,0 +1,35 @@
+.customers-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px;
+}
+
+.customers-container-title {
+  text-align: center;
+}
+
+.customer-url {
+  font-size: 1.2em;
+}
+
+.customer-url > a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.customer-image {
+  max-width: 100px;
+  max-height: 80px;
+  filter: grayscale(100%);
+}
+
+.customer-image:hover {
+  filter: grayscale(0);
+
+}
+
+.title-customers {
+  margin-top: 10px;
+  margin-right: 20px;
+  color: #CCCCCC;
+}

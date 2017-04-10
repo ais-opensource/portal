@@ -1,0 +1,78 @@
+.app-header {
+  background-color: #FFFFFF;
+  height: 120px;
+
+}
+
+.app-header-link-list {
+  margin-top: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.05em;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 80px;
+  width: 120px;
+  background: url('./logo.svg') no-repeat;
+}
+
+.navbar-default .navbar-nav > li > a {
+  float: right;
+	color: #000000;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #000000;
+}
+
+@media screen and (max-width: 420px) {
+
+  .logo {
+    margin-left: 100px;
+  }
+
+  ul  {
+
+    padding-top: 35px;
+  }
+
+  .app-header {
+    margin-bottom: 160px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    margin-left: 73px;
+  }
+
+  ul  {
+    padding-top: 35px;
+  }
+
+  .app-header {
+    margin-bottom: 160px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .logo {
+    margin-left: 50px;
+  }
+
+  ul  {
+    padding-top: 35px;
+  }
+
+  .app-header {
+    margin-bottom: 160px;
+  }
+
+
+}
+
+@media screen and (max-width: 420px) {
+
+}

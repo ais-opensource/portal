@@ -1,0 +1,11 @@
+.ra-title {
+  font-size: 3em;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 400px;
+  font-family: 'Anton', sans-serif;
+}
+
+.ra-container {
+  margin-top: 150px;
+}

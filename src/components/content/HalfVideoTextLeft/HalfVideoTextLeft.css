@@ -1,0 +1,49 @@
+.half-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right {
+  width: 50%;
+  height: 600px;
+  color: white;
+}
+
+
+.content-video-left {
+   font-family: "Roboto", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+   color: white;
+   font-size: 2.6em;
+   padding: 20px;
+   margin: 40px;
+}
+
+.title-video-left {
+  color: white;
+  font-size: 4.6em;
+}
+
+.button-container {
+  padding-top: 100px;
+  margin: 0;
+}
+
+
+.button {
+
+  color: white;
+  border: 2px solid white;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #4286f4;
+  border: 2px solid #4286f4;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}

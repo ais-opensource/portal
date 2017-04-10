@@ -1,0 +1,55 @@
+.half-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-video-right {
+  width: 50%;
+  height: 600px;
+  color: white;
+  background-color: #901111;
+  padding: 0;
+  margin: 0;
+}
+
+.right-video-right {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.hrf-content {
+   font-family: "Roboto", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+   color: white;
+   font-size: 2.6em;
+   padding: 20px;
+   margin: 40px;
+}
+
+.title {
+  color: white;
+  font-size: 4em;
+}
+
+.button-container {
+  padding-top: 100px;
+  margin: 0;
+}
+
+
+.button {
+  color: white;
+  border: 2px solid white;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #4286f4;
+  border: 2px solid #4286f4;
+}
+
+.video {
+  width: 600px;
+}
