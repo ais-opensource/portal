@@ -7,8 +7,6 @@ export class HalfImageHalfTextLeft extends React.Component {
   render() {
     const { title, content, imageUrl, imageDescription, buttonUrl, backgroundColor } = this.props
     const imageStyle = {
-      width: "50%",
-      height: "600px",
       backgroundImage: `url('${imageUrl}')`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
@@ -21,12 +19,12 @@ export class HalfImageHalfTextLeft extends React.Component {
         <div className="row half-container">
           <div className="left" style={left}>
             <h1 className="title">{title}</h1>
-            <span className="content-image-left">{content}</span>
+            <div className="content-image-left">{content}</div>
             <div className="button-container">
               { buttonUrl ? <Link to={buttonUrl} className="button">SAIBA MAIS</Link> : null}
             </div>
           </div>
-          <div className="right" style={imageStyle}>
+          <div className="image-text-left" style={imageStyle}>
           </div>
         </div>
       </div>

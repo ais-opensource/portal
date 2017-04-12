@@ -11,6 +11,13 @@
   margin-left: 10px;
 }
 
+.image-text-left {
+  height: 600px;
+  width: 50%;
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
 
 .content-image-left {
   font-family: "Roboto", sans-serif;
@@ -34,7 +41,6 @@
 
 
 .button {
-
   padding: 25px;
   color: white;
   border: 2px solid white;
@@ -44,4 +50,29 @@
   text-decoration: none;
   color: #4286f4;
   border: 2px solid #4286f4;
+}
+
+
+@media screen and (max-width: 420px) {
+  .half-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .image-text-left {
+    width: 100%;
+    margin-left: -10px;
+  }
+  .left {
+    width: 100%;
+  }
+  .button-container {
+    margin-top: 100px;
+
+  }
+  .content-image-left {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
 }

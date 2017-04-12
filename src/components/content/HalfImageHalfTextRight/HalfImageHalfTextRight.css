@@ -34,7 +34,6 @@
 
 
 .button {
-
   color: white;
   border: 2px solid white;
 }
@@ -43,4 +42,52 @@
   text-decoration: none;
   color: #4286f4;
   border: 2px solid #4286f4;
+}
+
+.image-text-right {
+  height: 600px;
+  width: 50%;
+  margin-right: -10px;
+  margin-left: 10px;
+}
+
+
+@media screen and (max-width: 420px) {
+  .half-container {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .image-text-right {
+    width: 100%;
+    margin-left: -10px;
+  }
+  .left {
+    width: 100%;
+  }
+  .content {
+    text-align: center;
+    font-size: 2em;
+  }
+  .button-container {
+    padding-top: 20px;
+  }
+
+}
+@media screen and (max-width: 321px) {
+  .half-container {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .image-text-right {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .left {
+    width: 100%;
+    margin: 0;
+  }
+  .content {
+    text-align: center;
+    font-size: 1.55em;
+  }
 }
