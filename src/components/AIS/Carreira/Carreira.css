@@ -1,0 +1,25 @@
+.carreira-container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.vaga {
+  margin: 20px;
+}
+
+.apply-button {
+  background-color: #4286f4;
+  border: 0;
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.apply-button:hover {
+  filter: contrast(50%);
+}
+
+
+.sem-vagas {
+  color: red;
+}

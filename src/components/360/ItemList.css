@@ -1,0 +1,29 @@
+.item-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 40px;
+  background-color: white;
+  border-radius: 18%;
+}
+
+.item-image-container {
+  margin-left: 100px;
+}
+
+.item-container:hover {
+  filter: invert(75%);
+}
+
+.item-image {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+}
+
+.item-description {
+  margin: 100px;
+  margin-top: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+}

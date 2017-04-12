@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './HalfImageHalfTextRight.css'
 
 export class HalfImageHalfTextRight extends React.Component {
@@ -27,7 +28,7 @@ export class HalfImageHalfTextRight extends React.Component {
             <h1 className="title">{title}</h1>
             <span className="content">{content}</span>
             <div className="button-container">
-              {buttonUrl ? <a href={buttonUrl} className="button">SAIBA MAIS</a> : null}
+              {buttonUrl ? <Link to={buttonUrl} className="button">SAIBA MAIS</Link> : null}
             </div>
           </div>
         </div>

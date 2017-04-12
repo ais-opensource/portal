@@ -3,18 +3,14 @@ import './VRImageFullWidth.css';
 
 export class VRImageFullWidth extends React.Component {
 
+
   render(){
-    const { imageUrl, rotation } = this.props
+    const rawImageUrl = this.props.match.params.path
+    const imageUrl = `./360/${rawImageUrl}`
     return (
-      <div className="container-fluid">
-        <div className="row vr-container">
-          <a-scene>
-            <a-assets>
-            </a-assets>
-            <a-sky src={imageUrl} rotation={rotation}></a-sky>
-          </a-scene>
-        </div>
-      </div>
+      <a-scene>
+        <a-sky src={imageUrl} rotation="0 0 0"></a-sky>
+      </a-scene>
     )
   }
 }

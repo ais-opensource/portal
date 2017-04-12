@@ -47,6 +47,7 @@ export class Home extends React.Component {
         <ImageFullWidthWithDescription
           imageUrl={'./vr-headset-woman.png'}
           title='MÍDIA 360'
+          buttonUrl='/360'
         />
 
 

@@ -23,23 +23,36 @@
 	color: #000000;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-	color: #000000;
+.header-container {
+  display: flex;
+  justify-content: flex-end;
 }
+
+.header-item {
+  padding: 5px;
+  margin-top: 40px;
+  font-size: 1.22em;
+}
+
+.header-item > a {
+  color: #000000;
+}
+.header-item > a:hover {
+  color: #4286f4;
+  text-decoration: none;
+}
+
 
 @media screen and (max-width: 420px) {
 
-  .logo {
-    margin-left: 100px;
+  .navbar-header {
+    display: flex;
+    justify-content: flex-end;
   }
+  .header-container {
+    display: flex;
+    justify-content: center;
 
-  ul  {
-
-    padding-top: 35px;
-  }
-
-  .app-header {
-    margin-bottom: 160px;
   }
 }
 
@@ -47,27 +60,11 @@
   .logo {
     margin-left: 73px;
   }
-
-  ul  {
-    padding-top: 35px;
-  }
-
-  .app-header {
-    margin-bottom: 160px;
-  }
 }
 
 @media screen and (max-width: 321px) {
   .logo {
     margin-left: 50px;
-  }
-
-  ul  {
-    padding-top: 35px;
-  }
-
-  .app-header {
-    margin-bottom: 160px;
   }
 
 

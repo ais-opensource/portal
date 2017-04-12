@@ -11,14 +11,11 @@ export class Header extends React.Component {
               <div className="logo"></div>
             </a>
           </div>
-          <ul className="nav navbar-nav app-header-link-list pull-right">
-            <li><a href="">Produtos</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="">Suporte</a></li>
-            <li><a href="">Carreira</a></li>
-          </ul>
-        </div>
-        <div className="chocolate">
+          <div className="header-container">
+            <div className="header-item"><a href="/">Produtos</a></div>
+            <div className="header-item"><a href="/ais/#contato">Contato</a></div>
+            <div className="header-item"><a href="/ais/#carreira">Carreira</a></div>
+          </div>
         </div>
       </nav>
     )

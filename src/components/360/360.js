@@ -12,7 +12,6 @@ export class Three60 extends React.Component {
         <div>
           <img className="trusted-logo" src="./trusted.png" />
         </div>
-
       </div>
     )
   }
@@ -33,7 +32,7 @@ export class Three60 extends React.Component {
           imageDescription="Câmeras"
           content='Construções, paisagens e projetos arquitetônicos mais acessíveis do que nunca'
           backgroundColor="#493736"
-          buttonUrl='/360/fotos'
+          buttonUrl='/fotos-360'
         />
         <HalfImageHalfTextRight
           title='Videos 360'
@@ -41,7 +40,7 @@ export class Three60 extends React.Component {
           imageDescription="Homem em cima de um morro"
           content='Transporte emoções por diferentes pontos de vista através de Vídeos 360'
           backgroundColor="#7B3B3B"
-          buttonUrl='/360/videos'
+          buttonUrl='/videos-360'
         />
       </div>
     )
