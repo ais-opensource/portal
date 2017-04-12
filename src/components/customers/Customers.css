@@ -33,3 +33,37 @@
   margin-right: 20px;
   color: #CCCCCC;
 }
+
+
+@media screen and (max-width: 420px) {
+  .customers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .customer-image {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .customer-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .customers-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .customer-image {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+}

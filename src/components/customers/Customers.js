@@ -25,10 +25,8 @@ export class Customers extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="customers-container container-fluid">
-            <span className="title-customers">Creditado por:</span> {this._renderCustomers()}
-        </div>
+      <div className="customers-container">
+          <span className="title-customers">Creditado por:</span> {this._renderCustomers()}
       </div>
     )
   }
