@@ -5,3 +5,12 @@
   text-align: left;
   font-family: 'Passion One', cursive;
 }
+
+
+@media screen and (max-width: 420px) {
+
+  .main-title {
+    font-size: 4em;
+    margin-bottom: 0;
+  }
+}
