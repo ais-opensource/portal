@@ -13,3 +13,11 @@
   width: 300px;
   height: 300px;
 }
+
+
+@media screen and (max-width: 420px) {
+  .trusted-logo {
+    width: 175px;
+    height: 175px;
+  }
+}

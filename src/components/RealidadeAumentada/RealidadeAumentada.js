@@ -8,7 +8,7 @@ import './RealidadeAumentada.css'
 export class RealidadeAumentada extends React.Component {
   render() {
     return (
-        <div className="container-fluid">
+        <div>
         <PageTitle title="Realidade Aumentada" />
         <div id="caca-noel">
           <div className="ra-title">Caça Noel</div>

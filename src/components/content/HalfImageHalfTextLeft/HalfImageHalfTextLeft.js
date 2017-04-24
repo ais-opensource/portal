@@ -5,17 +5,17 @@ import './HalfImageHalfTextLeft.css'
 export class HalfImageHalfTextLeft extends React.Component {
 
   render() {
-    const { title, content, imageUrl, imageDescription, buttonUrl, backgroundColor } = this.props
+    const { title, content, imageUrl, buttonUrl, backgroundColor, id } = this.props
     const imageStyle = {
       backgroundImage: `url('${imageUrl}')`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
     }
     const left = {
-      backgroundColor: this.props.backgroundColor
+      backgroundColor: backgroundColor
     }
     return (
-      <div className="container-fluid">
+      <div className="container-fluid" id={id}>
         <div className="row half-container">
           <div className="left" style={left}>
             <div className="title">{title}</div>

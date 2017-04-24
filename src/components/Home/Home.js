@@ -2,11 +2,22 @@ import React from 'react'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
-import { VRImageFullWidth } from '../content/VRImageFullWidth/VRImageFullWidth'
 import { Customers } from '../customers/Customers'
-
+import './Home.css'
 export class Home extends React.Component {
 
+  _renderApresentacaoText() {
+    return (
+      <div>
+        <div className="transformando animated fadeInLeft">
+          Transformando as pessoas...
+        </div>
+        <div className="exploradores animated fadeInLeft">
+          Em exploradores de novos mundos
+        </div>
+      </div>
+    )
+  }
   render() {
     const customers = [
       {
@@ -45,30 +56,32 @@ export class Home extends React.Component {
     return (
       <div>
         <ImageFullWidthWithDescription
-          imageUrl={'./vr-headset-woman.png'}
-          title='MÍDIA 360'
-          buttonUrl='/360'
+          imageUrl={'./predios-meio-futuristas.jpeg'}
+          textContent={this._renderApresentacaoText()}
         />
 
-
-          <Customers customers={customers} />
-
-
+        <Customers customers={customers} />
         <HalfImageHalfTextRight
           title='Realidade Aumentada'
-          imageUrl='./ra-sketch.png'
+          imageUrl='./realidade-aumentada-celular.jpeg'
           imageDescription="Imagem representando a realidade aumentada"
           content='Projeções de modelos 3D iterativos no mundo real'
           buttonUrl='/realidade-aumentada'
         />
         <HalfImageHalfTextLeft
           title='Realidade Virtual'
-          imageUrl='./vr-sketch.png'
+          imageUrl='./virtual-reality-homem.jpeg'
           imageDescription="Imagem representando a realidade virtual"
           content='Desenvolvimento de aplicações em realidade virtual para melhorar a experiência do usuário.'
           buttonUrl='/realidade-virtual'
           backgroundColor="#000000"
         />
+        <ImageFullWidthWithDescription
+          imageUrl={'./oculus.jpeg'}
+          title='MÍDIA 360'
+          buttonUrl='/360'
+        />
+
       </div>
     )
   }

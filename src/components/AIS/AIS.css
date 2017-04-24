@@ -5,10 +5,38 @@
   margin: 30px;
 }
 
-
 .contato-content {
   font-family: 'Roboto', sans-serif;
   font-size: 4em;
   font-weight: 100;
   margin: 30px;
+}
+
+.contato-content-email {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: 100;
+  margin: 30px;
+}
+
+@media screen and (max-width: 420px) {
+
+  .missao-content {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  .contato-content {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  .contato-content-email {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 0;
+  }
 }

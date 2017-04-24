@@ -12,7 +12,6 @@ import { VRVideo } from '../content/VRVideo/VRVideo'
 import {
   BrowserRouter,
   Route,
-  Link
 } from 'react-router-dom'
 import { Home } from '../Home/Home'
 import './App.css';

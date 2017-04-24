@@ -23,3 +23,11 @@
 .sem-vagas {
   color: red;
 }
+
+
+@media screen and (max-width: 420px) {
+
+  .carreira-container {
+    font-size: 2.5em;
+  }
+}

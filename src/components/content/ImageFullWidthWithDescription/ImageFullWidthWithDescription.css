@@ -11,12 +11,11 @@
 }
 
 .text-container-content {
-  color: black;
   width: 400px;
-  color: #FFFFFF;
   font-family: 'Roboto' sans-serif;
-  text-shadow: -2px 2px 1px #000000;
-  text-align: right;
+  font-size: 3.5em;
+  font-weight: 100;
+  margin-left: 200px;
 }
 
 .button-container-full {
@@ -47,12 +46,13 @@
 .image-full-container {
   width: 100%;
   height: 600px;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 420px) {
   .image-full-container {
     height: 500px;
-    width: 410px;
+    width: 100%;
   }
 
   .text-container {
@@ -72,10 +72,10 @@
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 380px) {
   .image-full-container {
     height: 430px;
-    width: 310px;
+    width: 100%;
   }
 
   .text-container {
@@ -91,6 +91,10 @@
     margin-left: 75px;
   }
 
+
+  .text-container-content {
+    width: 375px;
+  }
   .button-container-full {
     padding-top: 150px;
     margin-left: 75px;

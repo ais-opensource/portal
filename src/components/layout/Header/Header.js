@@ -12,9 +12,8 @@ export class Header extends React.Component {
             </a>
           </div>
           <div className="header-container">
-            <div className="header-item"><a href="/">Produtos</a></div>
-            <div className="header-item"><a href="/ais/#contato">Contato</a></div>
-            <div className="header-item"><a href="/ais/#carreira">Carreira</a></div>
+            <div className="header-item"><a href="/quem-somos#contato">Contato</a></div>
+            <div className="header-item"><a href="/quem-somos#carreira">Carreira</a></div>
           </div>
         </div>
       </nav>

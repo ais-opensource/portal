@@ -7,11 +7,10 @@ export class HalfVideoTextRight extends React.Component {
     const { title, content, videoUrl, buttonUrl } = this.props
     const right ={
       backgroundColor: this.props.backgroundColor,
-      margin: 0,
     }
 
     return (
-      <div className="container-fluid">
+      <div>
         <div className="row half-container">
           <div className="right">
             <iframe className="video" src={videoUrl} frameBorder="0" allowFullScreen></iframe>

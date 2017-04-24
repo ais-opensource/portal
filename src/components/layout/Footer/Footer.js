@@ -19,16 +19,15 @@ export const Footer = ({props}) => {
       </div>
       <div className="contents">
         <Link className="contents-title" to="/realidade-virtual">Realidade Virtual</Link>
-        <div className="contents-link"><a href="">Promoções Turísticas</a></div>
-        <div className="contents-link"><a href="">Desenvolvimento de Maquetes Virtuais</a></div>
-        <div className="contents-link"><a href="">Jogos Publicitários</a></div>
-        <div className="contents-link"><a href="">Jogos Sérios</a></div>
-        <div className="contents-link"><a href="">Conteúdo Educativo Imersivo</a></div>
+        <div className="contents-link"><a href="/realidade-virtual#promocoes-turisticas">Promoções Turísticas</a></div>
+        <div className="contents-link"><a href="/realidade-virtual#maquetes">Desenvolvimento de Maquetes Virtuais</a></div>
+        <div className="contents-link"><a href="/realidade-virtual#jogos-publicitarios">Jogos Publicitários</a></div>
+        <div className="contents-link"><a href="/realidade-virtual#jogos-serios">Jogos Sérios</a></div>
+        <div className="contents-link"><a href="/realidade-virtual#conteudo-educativo">Conteúdo Educativo Imersivo</a></div>
       </div>
       <div className="contents">
       <Link className="contents-title" to="/quem-somos">AIS - Ambientes Virtuais</Link>
-        <div className="contents-link"><a href="">Quem somos</a></div>
-        <div className="contents-link"><a href="">Carreira</a></div>
+        <div className="contents-link"><a href="/quem-somos">Quem somos</a></div>
       </div>
     </footer>
   )

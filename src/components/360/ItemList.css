@@ -4,6 +4,7 @@
   margin: 40px;
   background-color: white;
   border-radius: 18%;
+  max-width: 100%;
 }
 
 .item-image-container {
@@ -26,4 +27,28 @@
   font-family: 'Roboto', sans-serif;
   font-size: 3em;
   font-weight: 100;
+}
+
+
+@media screen and (max-width: 420px) {
+
+  .item-container {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .item-image-container {
+    margin-left: 10px;
+  }
+
+  .item-image {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+  }
+
+  .item-description {
+    font-size: 2em;
+    margin: 10px;
+  }
 }

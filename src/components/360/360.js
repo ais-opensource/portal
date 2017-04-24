@@ -10,14 +10,14 @@ export class Three60 extends React.Component {
       <div>
         Mostre seu negócio para o mundo pelo Google Maps e Street View com nosso serviço certificado
         <div>
-          <img className="trusted-logo" src="./trusted.png" />
+          <img className="trusted-logo" src="./trusted.png" alt="trusted"/>
         </div>
       </div>
     )
   }
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <PageTitle title="Mídia 360" />
         <HalfImageHalfTextRight
           title='Google Maps'

@@ -5,11 +5,7 @@ import './AIS.css'
 
 export class AIS extends React.Component {
   _renderEquipeAIS() {
-    const avatars = [
-      '',
-      '',
-      '',
-    ]
+  
   }
   render() {
     return (
@@ -25,17 +21,17 @@ export class AIS extends React.Component {
 
 
           </div>
-          <div className="carreira">
+          <div className="carreira" id="carreira">
             <PageTitle title="Carreira" />
             <Carreira />
           </div>
-          <div >
+          <div id="contato">
             <PageTitle title='Contato' />
             <div className="contato-content">
-              Telefone: + 55 45 98406 7334
+              Telefone: <br /> + 55 45 98406 7334
             </div>
-            <div className="contato-content">
-              E-mail: ais.ambientesvirtuais@gmail.com
+            <div className="contato-content-email">
+              <a href="mailto:ais.ambientesvirtuais@gmail.com">E-mail: ais.ambientesvirtuais@gmail.com</a>
             </div>
           </div>
         </div>

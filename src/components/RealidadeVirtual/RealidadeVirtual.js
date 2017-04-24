@@ -10,7 +10,7 @@ import './RealidadeVirtual.css'
 export class RealidadeVirtual extends React.Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <PageTitle title="Realidade Virtual" />
           <HalfVideoTextLeft
             backgroundColor="#7B3B3B"
@@ -18,36 +18,40 @@ export class RealidadeVirtual extends React.Component {
             title='Promoções Turísticas'
             buttonUrl='http://www.pascoavirtual.com.br'
             content='Possibilite a emoção de passeios turísticos mesmo à distância'
+            id="promocoes-turisticas"
           />
           <HalfImageHalfTextRight
             title='Maquetes Virtuais'
             imageUrl='./maquetevirtual.jpg'
             imageDescription="Maquetes Virtuais"
             content='Apresentação de modelos 3D executados em tempo real'
-            buttonUrl='/realidade-virtual/maquetes-virtuais'
+
             backgroundColor="#7B3B3B"
+            id="maquetes"
           />
           <HalfImageHalfTextLeft
             title='Jogos Publicitários'
             imageUrl='./jogos-publicitarios.jpeg'
             imageDescription="Jogos Publicitários"
             content='Relacione sua marca com sensações que intensifiquem o consumo'
-            buttonUrl='/realidade-virtual/jogos-publicitarios'
+
             backgroundColor="#493736"
+            id="jogos-publicitarios"
           />
           <HalfImageHalfTextRight
             title='Conteúdo Educativo Imersivo'
             imageUrl='./educativo-imersivo.jpeg'
             imageDescription="Conteúdo Educativo Imersivo"
             content='Plataforma de ensino que utiliza-se de realidade virtual'
-            buttonUrl='/realidade-virtual/educativo'
+
             backgroundColor="#7B3B3B"
+            id="conteudo-educativo"
           />
         <div className="rv-container">
           <ImageFullWidthWithDescription
             imageUrl={'./jogos-serios.jpeg'}
             title='JOGOS SÉRIOS'
-            buttonUrl='#'
+            
           />
         </div>
       </div>

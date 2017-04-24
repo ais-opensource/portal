@@ -6,19 +6,17 @@ export class ImageFullWidthWithDescription extends React.Component {
   render() {
     const { imageUrl, title, textContent, buttonUrl } = this.props;
     const imageContainer = {
-      background: `url('${imageUrl}') no-repeat center`
+      background: `url('${imageUrl}') no-repeat`
     }
     return (
-      <div style={imageContainer} className="image-full-container">
-        <div className="text-container">
-          <div className="text-container-title">{title}</div>
-          <div>
-            <p className="text-container-content">
+      <div >
+        <div style={imageContainer} className="image-full-container">
+          <div className="text-container-title animated bounceInLeft">{title}</div>
+            <div className="text-container-content">
               {textContent}
-            </p>
-          </div>
+            </div>
           <div className="button-container-full">
-            <a href={buttonUrl} className="button-full">SAIBA MAIS</a>
+            {buttonUrl ? <a href={buttonUrl} className="button-full">SAIBA MAIS</a> : null}
           </div>
         </div>
       </div>
