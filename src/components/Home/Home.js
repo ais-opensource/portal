@@ -76,10 +76,13 @@ export class Home extends React.Component {
           buttonUrl='/realidade-virtual'
           backgroundColor="#000000"
         />
-        <ImageFullWidthWithDescription
-          imageUrl={'./oculus.jpeg'}
-          title='MÍDIA 360'
+        <HalfImageHalfTextRight
+          title='Mídia 360'
+          imageUrl='./oculus.jpeg'
+          imageDescription="Óculos de realidade virtual sobre uma mesa"
+          content='Filmagem, fotografia e edição de mídias 360'
           buttonUrl='/360'
+          backgroundColor="#000000"
         />
 
       </div>

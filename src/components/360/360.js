@@ -36,7 +36,7 @@ export class Three60 extends React.Component {
         />
         <HalfImageHalfTextRight
           title='Videos 360'
-          imageUrl='./video-hill.jpeg'
+          imageUrl='./chateau-world.jpeg'
           imageDescription="Homem em cima de um morro"
           content='Transporte emoções por diferentes pontos de vista através de Vídeos 360'
           backgroundColor="#7B3B3B"
