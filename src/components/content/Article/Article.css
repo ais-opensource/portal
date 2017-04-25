@@ -1,0 +1,40 @@
+.article-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 8em;
+  font-weight: 100;
+}
+
+.article-subheader {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 3.22em;
+  text-align: left;
+  margin-left: 100px;
+  color: #4286f4;
+}
+
+.article-body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 50px;
+  margin-left: 25%;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+
+@media screen and (max-width: 376px) {
+
+  .article-title {
+    font-size: 3.35em;
+  }
+
+  .article-subheader {
+    font-size: 1.55em;
+  }
+
+  .article-body {
+    margin-left: 0;
+  }
+}

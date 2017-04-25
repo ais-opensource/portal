@@ -6,6 +6,10 @@ import { Customers } from '../customers/Customers'
 import './Home.css'
 export class Home extends React.Component {
 
+  componentDidMount() {
+    window.scrollTo(0,0)
+  }
+
   _renderApresentacaoText() {
     return (
       <div>

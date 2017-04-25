@@ -7,7 +7,7 @@ export const Footer = ({props}) => {
     <footer className="footer">
       <div className="contents">
         <Link className="contents-title" to="/360">360 graus</Link>
-        <div className="contents-link"><Link to="/">Google Maps</Link></div>
+        <div className="contents-link"><Link to="/360#google-maps">Google Maps</Link></div>
         <div className="contents-link"><Link to="/fotos-360">Fotos</Link></div>
         <div className="contents-link"><Link to="/videos-360">Vídeos</Link></div>
       </div>

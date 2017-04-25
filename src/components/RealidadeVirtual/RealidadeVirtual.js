@@ -3,22 +3,26 @@ import { PageTitle } from '../content/PageTitle/PageTitle'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
-import { HalfVideoTextLeft } from '../content/HalfVideoTextLeft/HalfVideoTextLeft'
 
 import './RealidadeVirtual.css'
 
 export class RealidadeVirtual extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0)
+  }
   render() {
     return (
       <div>
         <PageTitle title="Realidade Virtual" />
-          <HalfVideoTextLeft
-            videoUrl='https://www.youtube.com/embed/_2rwrEFiP20'
+          <HalfImageHalfTextLeft
             title='Promoções Turísticas'
-            buttonUrl='http://www.pascoavirtual.com.br'
+            imageUrl='./town-on-rocks-by-sea.jpeg'
+            buttonUrl="/promocoes-turisticas"
+            imageDescription="Promoções turísticas"
             content='Possibilite a emoção de passeios turísticos mesmo à distância'
             backgroundColor='#1e152a'
             id="promocoes-turisticas"
+
           />
           <HalfImageHalfTextRight
             title='Maquetes Virtuais'
@@ -27,6 +31,7 @@ export class RealidadeVirtual extends React.Component {
             content='Apresentação de modelos 3D executados em tempo real'
             backgroundColor="#1e152a"
             id="maquetes"
+            buttonUrl="/maquetes-digitais"
           />
           <HalfImageHalfTextLeft
             title='Jogos Publicitários'
@@ -35,6 +40,7 @@ export class RealidadeVirtual extends React.Component {
             content='Relacione sua marca com sensações que intensifiquem o consumo'
             backgroundColor="#1e152a"
             id="jogos-publicitarios"
+            buttonUrl="jogos-publicitarios"
           />
           <HalfImageHalfTextRight
             title='Conteúdo Educativo Imersivo'
@@ -43,11 +49,13 @@ export class RealidadeVirtual extends React.Component {
             content='Plataforma de ensino que utiliza-se de realidade virtual'
             backgroundColor="#1e152a"
             id="conteudo-educativo"
+            buttonUrl="/educativo"
           />
         <div className="rv-container">
           <ImageFullWidthWithDescription
             imageUrl={'./jogos-serios.jpeg'}
             title='JOGOS SÉRIOS'
+            buttonUrl="/jogos-serios"
           />
         </div>
       </div>

@@ -6,6 +6,9 @@ import { VideoFullWidth } from '../content/VideoFullWidth/VideoFullWidth'
 import './RealidadeAumentada.css'
 
 export class RealidadeAumentada extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0)
+  }
   render() {
     return (
         <div>
@@ -21,7 +24,6 @@ export class RealidadeAumentada extends React.Component {
           />
         </div>
         <HalfVideoTextLeft
-          backgroundColor="#4e6766"
           videoUrl='https://www.youtube.com/embed/_2rwrEFiP20'
           title='Páscoa Virtual'
           buttonUrl='http://www.pascoavirtual.com.br'

@@ -5,6 +5,9 @@ import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImag
 import './360.css'
 
 export class Three60 extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0)
+  }
   _renderGoogleMapsContent() {
     return (
       <div>

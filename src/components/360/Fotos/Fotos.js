@@ -2,6 +2,10 @@ import React from 'react'
 import { ItemList } from '../ItemList'
 //import { PageTitle } from '.../content/PageTitle/PageTitle'
 export class Fotos extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0,0)
+  }
+  
   render() {
     return (
       <div>
