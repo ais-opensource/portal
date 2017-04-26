@@ -18,7 +18,6 @@ export class Maquetes extends React.Component {
           antes que ela  que concluída.
           Esse tipo de sistema também permite uma  ltragem para corretores que precisam apresentar vários imóveis para clientes, assim economizando tempo.
         </p>
-        <ImageFullWidth imageUrl='./maquete-digital.jpeg' />
         <p className="paragraph">
           Por ser um sistema construído em um motor de jogos, ele executa os modelos 3D em tempo real, isso permite a inserção de interações durante a visualização arquitetônica.
         </p>
@@ -32,6 +31,7 @@ export class Maquetes extends React.Component {
           title='Desenvolvimento de maquetes Virtuais'
           subheader='Visualize projetos em tours virtuais'
           body={this.renderConteudo()}
+          imageUrl='./maquete-digital.jpeg'
         />
       </div>
     )

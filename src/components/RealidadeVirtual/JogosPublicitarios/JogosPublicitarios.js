@@ -8,7 +8,7 @@ export class JogosPublicitarios extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0)
   }
-  
+
   renderConteudo() {
     return (
       <div>
@@ -20,8 +20,6 @@ export class JogosPublicitarios extends React.Component {
           A utilização de jogos para divulgação de marcas é amplamente utilizada pelas grandes empresas de marketing atualmente. O objetivo deste aplicativo
           é chamar a atenção para a marca e liga-la a sensações que intensifiquem o consumo.
         </p>
-        <ImageFullWidth imageUrl='./jogos-publicitarios.jpeg' />
-        <br />
         <p className="paragraph">
           Unindo os conceitos de jogos publicitários e realidade virtual, é possível intensificar as sensações já proporcionadas normalmente pelo jogo, através da imersão.
         </p>
@@ -35,6 +33,7 @@ export class JogosPublicitarios extends React.Component {
           title='Jogos Publicitários'
           subheader='Conecte sua marca a sensações únicas através de conteúdo digital em realidade virtual a aumentada'
           body={this.renderConteudo()}
+          imageUrl='./jogos-publicitarios.jpeg'
         />
       </div>
     )

@@ -14,9 +14,9 @@ export class ImageFullWidthWithDescription extends React.Component {
 
     }
     return (
-      <div>
-        <div style={imageContainer}>
-          <div className="text-content">
+      <div >
+        <div className="image-full-width-container" style={imageContainer}>
+          <div className="text-content animated bounceInLeft">
             {textContent}
           </div>
         </div>

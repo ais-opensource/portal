@@ -4,6 +4,13 @@
   font-size: 13em;
   font-weight: 100;
   color: white;
-  margin-top: 50px;
   text-shadow: 5px 2px black;
+  -moz-animation-duration: 1.6s;
+  -moz-animation-delay: 0;
+}
+
+.image-full-width-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

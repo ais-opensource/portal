@@ -10,7 +10,7 @@ export class HalfImageHalfTextRight extends React.Component {
       backgroundImage: `url('${imageUrl}')`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
-      backgroundSize: 'auto',
+      backgroundSize: '100% auto',
 
     }
     const right = {

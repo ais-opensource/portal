@@ -8,7 +8,7 @@ export class Serios extends React.Component {
   componentDidMount() {
     window.scrollTo(0,0)
   }
-  
+
   renderConteudo() {
     return (
       <div>
@@ -16,8 +16,6 @@ export class Serios extends React.Component {
           Jogos sérios visam simular situações, com o objetivo de proporcionar o treinamento de profissionais,
           criando um gatilho para tomada de decisão em situações críticas.
         </p>
-        <ImageFullWidth imageUrl='./treinamento-incendio-fora.png' />
-        <br />
         <p className="paragraph">
           O conceito de jogos sérios, aliados as capacidades da realidade virtual,
           permitem que o usuário responda de forma interativa as situações criadas
@@ -38,6 +36,7 @@ export class Serios extends React.Component {
           title='Jogos Sérios'
           subheader='Treine a sua equipe com mais segurança e menos custo'
           body={this.renderConteudo()}
+          imageUrl='./treinamento-incendio-fora.png'
         />
       </div>
     )

@@ -26,7 +26,7 @@ export class RealidadeVirtual extends React.Component {
           />
           <HalfImageHalfTextRight
             title='Maquetes Virtuais'
-            imageUrl='./maquetevirtual.jpg'
+            imageUrl='./maquetevirtual.png'
             imageDescription="Maquetes Virtuais"
             content='Apresentação de modelos 3D executados em tempo real'
             backgroundColor="#1e152a"
