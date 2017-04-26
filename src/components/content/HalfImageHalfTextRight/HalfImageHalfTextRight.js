@@ -18,11 +18,11 @@ export class HalfImageHalfTextRight extends React.Component {
     }
     return (
       <div>
-        <div className="half-container-right" id={id}>
+        <div className="row half-container-right" id={id}>
           <div style={imageStyle} className="image-text-right">
           </div>
-          <div className="left" style={right}>
-            <h1 className="title">{title}</h1>
+          <div className="right" style={right}>
+            <div className="title">{title}</div>
             <div className="content">{content}</div>
             <div className="button-container-right">
               {buttonUrl ? <Link to={buttonUrl} className="button">SAIBA MAIS</Link> : null}

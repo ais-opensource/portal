@@ -15,7 +15,7 @@ export class HalfImageHalfTextLeft extends React.Component {
       backgroundColor: backgroundColor
     }
     return (
-      <div className="container-fluid" id={id}>
+      <div id={id}>
         <div className="row half-container">
           <div className="left" style={left}>
             <div className="title">{title}</div>

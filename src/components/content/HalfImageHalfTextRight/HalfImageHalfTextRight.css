@@ -3,12 +3,17 @@
   justify-content: space-around;
 }
 
-.left {
+
+.right {
   width: 50%;
   height: 600px;
+  background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 
 .content {
   font-family: "Roboto", sans-serif;
@@ -16,37 +21,19 @@
   font-style: normal;
   color: white;
   font-size: 2.6em;
-  padding: 20px;
-  margin: 40px;
-}
-
-.title {
-  color: white;
-  font-size: 4em;
-}
-
-.button-container {
-  padding-top: 100px;
-  margin: 0;
+  margin-top: 50px;
 }
 
 
-.button {
-  color: white;
-  border: 2px solid white;
+.button-container-right {
+  margin-top: 100px;
 }
 
-.button:hover {
-  text-decoration: none;
-  color: #4286f4;
-  border: 2px solid #4286f4;
-}
 
 .image-text-right {
   height: 600px;
   width: 50%;
-  margin-right: -10px;
-  margin-left: 10px;
+
 }
 
 
@@ -69,9 +56,6 @@
   .content {
     text-align: center;
     font-size: 2em;
-  }
-  .button-container {
-    padding-top: 20px;
   }
 
 }
