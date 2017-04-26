@@ -24,6 +24,10 @@
   margin-top: 50px;
 }
 
+.title {
+  margin-top: 50px;
+}
+
 
 .button-container-right {
   margin-top: 100px;
@@ -46,7 +50,6 @@
   }
   .image-text-right {
     width: 100%;
-    margin-left: -10px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -71,12 +74,15 @@
     margin-left: 0;
     margin-right: 0;
   }
-  .left {
+  .right {
     width: 100%;
-    margin: 0;
+
   }
   .content {
     text-align: center;
     font-size: 1.55em;
+  }
+  .button-container-right {
+    margin-top: 100px;
   }
 }

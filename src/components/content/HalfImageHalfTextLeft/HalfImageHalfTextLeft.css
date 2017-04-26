@@ -55,22 +55,25 @@
   .half-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
   }
   .image-text-left {
     width: 100%;
   }
   .left {
     width: 100%;
+    justify-content: center;
   }
-  .button-container {
 
-
-  }
   .content-image-left {
     font-size: 2em;
-    margin-top: 0;
+
   }
 
+  .button-container {
+    margin-top: 100px;
+  }
   .title {
     font-size: 3em;
   }

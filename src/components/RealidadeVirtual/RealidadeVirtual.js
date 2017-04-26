@@ -43,21 +43,14 @@ export class RealidadeVirtual extends React.Component {
             buttonUrl="jogos-publicitarios"
           />
           <HalfImageHalfTextRight
-            title='Conteúdo Educativo Imersivo'
-            imageUrl='./educativo-imersivo.jpeg'
-            imageDescription="Conteúdo Educativo Imersivo"
-            content='Plataforma de ensino que utiliza-se de realidade virtual'
+            title='Jogos Sérios'
+            imageUrl='./jogos-serios.jpeg'
+            imageDescription="Jogos Sérios"
+            content='Simule situações reais improváveis e treine sua equipe'
             backgroundColor="#1e152a"
-            id="conteudo-educativo"
-            buttonUrl="/educativo"
-          />
-        <div className="rv-container">
-          <ImageFullWidthWithDescription
-            imageUrl={'./jogos-serios.jpeg'}
-            title='JOGOS SÉRIOS'
+            id="jogos-serios"
             buttonUrl="/jogos-serios"
           />
-        </div>
       </div>
     )
   }

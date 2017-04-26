@@ -1,15 +1,14 @@
 import React from 'react'
+import { ImageFullWidthWithDescription } from '../ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import './Article.css'
 
 
 export class Article extends React.Component {
     render() {
-      const { title, subheader, body } = this.props
+      const { title, subheader, body, imageUrl } = this.props
       return (
         <div>
-          <div className="article-title">
-            {title}
-          </div>
+          <ImageFullWidthWithDescription textContent={title} imageUrl={imageUrl}/>
           <div className="article-subheader">
             {subheader}
           </div>

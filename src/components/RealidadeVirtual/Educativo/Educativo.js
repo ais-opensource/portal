@@ -21,7 +21,7 @@ export class Educativo extends React.Component {
             equipamentos necessários para a transmissão de conhecimento. Ainda que e ciente, este modelo é caro e depende de altos investimentos e
             complexidades logísticas para sua capilarização em território nacional.
           </p>
-          <ImageFullWidth imageUrl='./educativo-imersivo.jpeg' />
+        
           <br />
           <p className="paragraph">
             Nesta parte, a realidade virtual emula os mesmos impactos positivos,
@@ -40,6 +40,7 @@ export class Educativo extends React.Component {
           <Article
             title='Conteúdo educativo imersivo'
             subheader='Aumente o rendimento e a taxa de aprendizado de alunos em até 90%'
+            imageUrl='./educativo-imersivo.jpeg'
             body={this.renderConteudo()}
           />
         </div>

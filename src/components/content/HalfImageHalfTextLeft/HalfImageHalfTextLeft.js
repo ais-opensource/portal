@@ -16,7 +16,7 @@ export class HalfImageHalfTextLeft extends React.Component {
     }
     return (
       <div id={id}>
-        <div className="row half-container">
+        <div className="half-container">
           <div className="left" style={left}>
             <div className="title">{title}</div>
             <div className="content-image-left">{content}</div>

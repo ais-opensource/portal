@@ -10,18 +10,7 @@ export class Home extends React.Component {
     window.scrollTo(0,0)
   }
 
-  _renderApresentacaoText() {
-    return (
-      <div>
-        <div className="transformando animated fadeInLeft">
-          Transformando as pessoas...
-        </div>
-        <div className="exploradores animated fadeInLeft">
-          Em exploradores de novos mundos
-        </div>
-      </div>
-    )
-  }
+
   render() {
     const customers = [
       {
@@ -59,11 +48,6 @@ export class Home extends React.Component {
     ]
     return (
       <div>
-        <ImageFullWidthWithDescription
-          imageUrl={'./predios-meio-futuristas.jpeg'}
-          textContent={this._renderApresentacaoText()}
-        />
-
         <Customers customers={customers} />
         <HalfImageHalfTextRight
           title='Realidade Aumentada'

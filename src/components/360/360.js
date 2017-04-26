@@ -30,7 +30,7 @@ export class Three60 extends React.Component {
           backgroundColor="#7B3B3B"
         />
         <HalfImageHalfTextLeft
-          title='Fotos'
+          title='Fotos 360'
           imageUrl='./photos.jpeg'
           imageDescription="Câmeras"
           content='Construções, paisagens e projetos arquitetônicos mais acessíveis do que nunca'
