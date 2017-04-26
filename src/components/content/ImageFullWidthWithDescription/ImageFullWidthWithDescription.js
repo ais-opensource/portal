@@ -4,7 +4,7 @@ import './ImageFullWidthWithDescription.css'
 export class ImageFullWidthWithDescription extends React.Component {
 
   render() {
-    const { imageUrl, title, textContent, buttonUrl } = this.props;
+    const { imageUrl, textContent } = this.props;
     const imageContainer = {
       background: `url('${imageUrl}') no-repeat center right`,
       width: '100%',

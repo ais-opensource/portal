@@ -1,6 +1,5 @@
 import React from 'react'
 import { Article } from '../../content/Article/Article'
-import { ImageFullWidth } from '../../content/ImageFullWidth/ImageFullWidth'
 import './JogosPublicitarios.css'
 
 export class JogosPublicitarios extends React.Component {

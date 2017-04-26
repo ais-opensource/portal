@@ -1,6 +1,5 @@
 import React from 'react'
 import { Article } from '../../content/Article/Article'
-import { ImageFullWidth } from '../../content/ImageFullWidth/ImageFullWidth'
 import './Educativo.css'
 
 

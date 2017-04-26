@@ -2,7 +2,6 @@ import React from 'react'
 import { PageTitle } from '../content/PageTitle/PageTitle'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
-import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 
 import './RealidadeVirtual.css'
 
