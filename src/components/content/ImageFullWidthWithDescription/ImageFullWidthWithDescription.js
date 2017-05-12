@@ -8,7 +8,6 @@ export class ImageFullWidthWithDescription extends React.Component {
     const imageContainer = {
       background: `url('${imageUrl}') no-repeat center right`,
       width: '100%',
-      height: '600px',
       backgroundSize: '100% auto',
       filter: 'brightness(0.8)',
 
