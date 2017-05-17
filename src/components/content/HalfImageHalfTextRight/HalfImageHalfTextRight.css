@@ -37,6 +37,7 @@
 .image-text-right {
   height: 600px;
   width: 50%;
+  background-size: 100% auto;
 
 }
 
@@ -62,6 +63,7 @@
   }
 
 }
+
 @media screen and (max-width: 420px) {
   .half-container-right {
     flex-direction: column-reverse;
@@ -73,6 +75,9 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    background-size: auto 100%;
+    background-position: left;
+
   }
   .right {
     width: 100%;
@@ -84,5 +89,12 @@
   }
   .button-container-right {
     margin-top: 100px;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .image-text-right {
+    background-size: auto 100%;
   }
 }

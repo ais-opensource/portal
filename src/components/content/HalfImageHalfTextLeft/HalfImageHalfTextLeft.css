@@ -17,6 +17,7 @@
 .image-text-left {
   height: 600px;
   width: 50%;
+  background-size: 100% auto;
 }
 
 
@@ -60,6 +61,7 @@
   }
   .image-text-left {
     width: 100%;
+    background-size: auto 100%;
   }
   .left {
     width: 100%;
@@ -68,7 +70,6 @@
 
   .content-image-left {
     font-size: 2em;
-
   }
 
   .button-container {
@@ -78,4 +79,10 @@
     font-size: 3em;
   }
 
+}
+
+@media screen and (max-width: 1280px) {
+  .image-text-left {
+    background-size: auto 100%;
+  }
 }
