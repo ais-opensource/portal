@@ -1,10 +1,11 @@
 import React from 'react'
 import './ImageFullWidthWithDescription.css'
+import {  BouncingArrow } from '../BouncingArrow/BouncingArrow'
 
 export class ImageFullWidthWithDescription extends React.Component {
 
   render() {
-    const { imageUrl, textContent } = this.props;
+    const { imageUrl, textContent, title } = this.props;
     const imageContainer = {
       background: `url('${imageUrl}') no-repeat center right`,
       width: '100%',
@@ -15,9 +16,11 @@ export class ImageFullWidthWithDescription extends React.Component {
     return (
       <div >
         <div className="image-full-width-container" style={imageContainer}>
-          <div className="text-content animated bounceInLeft">
-            {textContent}
+          <div className="title-content animated bounceInLeft">
+            {title}
           </div>
+          <div className="text-content">{textContent}</div>
+          <BouncingArrow />
         </div>
       </div>
     )

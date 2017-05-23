@@ -48,7 +48,9 @@ export class Home extends React.Component {
     ]
     return (
       <div>
-        <ImageFullWidthWithDescription imageUrl='./predios-meio-futuristas.jpeg' textContent='Um novo mundo lhe aguarda'/>
+        <ImageFullWidthWithDescription
+          imageUrl='./predios-meio-futuristas.jpeg' title='Ambientes virtuais, emoções reais'
+          textContent='Criando experiencias de realidade virtual e aumentada para unificar mundos' />
         <Customers customers={customers} />
         <HalfImageHalfTextRight
           title='Realidade Aumentada'
