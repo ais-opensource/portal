@@ -2,5 +2,6 @@
   font-size: 5em;
   color: white;
   text-shadow: 3px 2px 2px black;
+  -moz-animation-duration: 5s;
+  -moz-animation-delay: 3;
 }
-  

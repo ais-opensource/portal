@@ -20,6 +20,9 @@ export class ImageFullWidthWithDescription extends React.Component {
             {title}
           </div>
           <div className="text-content">{textContent}</div>
+          <div>
+            {this.props.children}
+          </div>
           <BouncingArrow />
         </div>
       </div>

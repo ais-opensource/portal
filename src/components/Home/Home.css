@@ -27,6 +27,11 @@
   width:100%;
 }
 
+.home-action-buttons-container {
+  display: flex;
+  
+}
+
 @media screen and (max-width: 380px) {
 
   .transformando {

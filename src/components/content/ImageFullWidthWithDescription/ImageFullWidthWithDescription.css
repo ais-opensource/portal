@@ -4,6 +4,7 @@
   font-size: 6em;
   font-weight: 300;
   color: white;
+  margin-top: 10px;
   text-shadow: 5px 2px black;
   -moz-animation-duration: 1.6s;
   -moz-animation-delay: 0;
@@ -13,7 +14,7 @@
   height: 600px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -22,7 +23,7 @@
   font-weight: 200;
   color: white;
   text-shadow: 3px 1px black;
-  margin-top: -150px;
+  margin-top: -10px;
 }
 
 @media screen and (max-width: 420px) {

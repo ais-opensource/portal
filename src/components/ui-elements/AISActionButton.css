@@ -1,0 +1,14 @@
+.ais-action-button {
+  padding: 5px;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-color: black;
+  color: black;
+  margin: 10px;
+  width: 200px;
+}
+
+.ais-action-button:hover {
+  color: #4286f4;
+  border-color: #4286f4;
+}
