@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
+import { ImageFullWidthWithDescription } from '../../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import './Contato.css'
 
 export class Contato extends React.Component {
@@ -9,9 +9,10 @@ export class Contato extends React.Component {
       <div>
         <ImageFullWidthWithDescription
           imageUrl=''
-          title=''
-          textContent=''
+          title='Entre em contato'
+          textContent='Vamos transformar sua ideia em realidade'
         />
+        
       </div>
     )
   }
