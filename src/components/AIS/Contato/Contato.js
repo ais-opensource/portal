@@ -8,11 +8,11 @@ export class Contato extends React.Component {
     return (
       <div>
         <ImageFullWidthWithDescription
-          imageUrl=''
+          imageUrl='./contato.jpg'
           title='Entre em contato'
           textContent='Vamos transformar sua ideia em realidade'
         />
-        
+
       </div>
     )
   }

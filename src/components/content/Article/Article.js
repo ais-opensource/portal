@@ -8,9 +8,9 @@ export class Article extends React.Component {
       const { title, subheader, body, imageUrl } = this.props
       return (
         <div>
-          <ImageFullWidthWithDescription textContent={title} imageUrl={imageUrl}/>
+          <ImageFullWidthWithDescription title={title} textContent={subheader} imageUrl={imageUrl}/>
           <div className="article-subheader">
-            {subheader}
+
           </div>
           <div className="article-body">
             {body}
