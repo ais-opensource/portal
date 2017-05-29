@@ -14,22 +14,12 @@ export class AIS extends React.Component {
     return (
       <div>
         <div id="quem-somos">
-          <div className="missao">
-              <PageTitle title="Missão" />
-              <div className="missao-content">
-                Nossa missão é desenvolver experiências imersivas únicas que proporcionem sensações que aumentem a predisposição para aprendizagem, consumo e fixação de marca.
-              </div>
-          </div>
-          <div className="equipe">
-
-
-          </div>
           <div className="carreira" id="carreira">
             <PageTitle title="Carreira" />
             <Carreira />
           </div>
           <div id="contato">
-            <PageTitle title='Contato' />
+            
             <div className="contato-content">
               Telefone: <br /> + 55 45 98406 7334
             </div>
