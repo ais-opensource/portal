@@ -29,9 +29,10 @@ export class Promocoes extends React.Component {
         <Article
           title='Promoções Turísticas'
           subheader='Atraia mais clientes para o seu negócio e melhore a experiência turística deles'
-          body={this.renderConteudo()}
           imageUrl='./town-on-rocks-by-sea.jpeg'
-        />
+        >
+          {this.renderConteudo()}
+        </Article>
       </div>
     )
   }

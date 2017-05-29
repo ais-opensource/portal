@@ -5,7 +5,7 @@ import './Article.css'
 
 export class Article extends React.Component {
     render() {
-      const { title, subheader, body, imageUrl } = this.props
+      const { title, subheader, children, imageUrl } = this.props
       return (
         <div>
           <ImageFullWidthWithDescription title={title} textContent={subheader} imageUrl={imageUrl}/>
@@ -13,7 +13,7 @@ export class Article extends React.Component {
 
           </div>
           <div className="article-body">
-            {body}
+            {children}
           </div>
         </div>
       )

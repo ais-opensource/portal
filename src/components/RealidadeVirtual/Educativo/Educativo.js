@@ -38,8 +38,9 @@ export class Educativo extends React.Component {
             title='Conteúdo educativo imersivo'
             subheader='Aumente o rendimento e a taxa de aprendizado de alunos em até 90%'
             imageUrl='./educativo-imersivo.jpeg'
-            body={this.renderConteudo()}
-          />
+          >
+            {this.renderConteudo()}
+          </Article>
         </div>
       )
     }
