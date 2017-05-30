@@ -13,7 +13,7 @@ export class RedesSociais extends React.Component {
           <a classname="social-media-anchor" href="https://www.facebook.com/realidadevirtualais" target="_blank"><i className="fa fa-facebook social-media-icon"></i></a>
         </li>
         <li className="social-media-item">
-          <a classname="social-media-anchor" href="https://www.facebook.com/realidadevirtualais" target="_blank"><i className="fa fa-instagram social-media-icon"></i></a>
+          <a classname="social-media-anchor" href="https://www.instagram.com/ambientesvirtuais/?hl=en" target="_blank"><i className="fa fa-instagram social-media-icon"></i></a>
         </li>
       </ul>
     )
