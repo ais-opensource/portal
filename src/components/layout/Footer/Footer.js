@@ -27,7 +27,7 @@ export const Footer = ({props}) => {
       </div>
       <div className="contents">
       <Link className="contents-title" to="/quem-somos">AIS - Ambientes Virtuais</Link>
-        <div className="contents-link"><a href="/quem-somos">Quem somos</a></div>
+        <div className="contents-link"><a href="/quem-somos">Contato</a></div>
       </div>
     </footer>
   )
