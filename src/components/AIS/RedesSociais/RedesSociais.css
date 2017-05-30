@@ -1,0 +1,30 @@
+.social-media-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.social-media-description {
+  text-align: center;
+  margin-top: 50px;
+  
+  color: #666666;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+
+.social-media-item {
+  list-style: none;
+}
+
+.social-media-anchor {
+  text-decoration: none;
+}
+
+.social-media-icon {
+  font-size: 5em;
+  margin: 25px
+}
