@@ -51,16 +51,18 @@ export class Home extends React.Component {
       <div>
         <ImageFullWidthWithDescription
           imageUrl='./predios-meio-futuristas.jpeg' title='Ambientes virtuais, emoções reais'
-          textContent='Criando experiencias de realidade virtual e aumentada para unificar mundos'>
+          textContent='Criando experiencias de realidade virtual e aumentada para unificar mundos'
+          >
           <div className="home-action-buttons-container">
-            <AISActionButton text="EXPERIMENTE AGORA" />
-            <AISActionButton text="SAIBA MAIS" />
+            <AISActionButton text="EXPERIMENTE AGORA" url="/fotos-360" />
+            <AISActionButton text="SAIBA MAIS" id="realidade-aumentada"/>
           </div>
 
           </ImageFullWidthWithDescription>
         <Customers customers={customers} />
         <HalfImageHalfTextRight
           title='Realidade Aumentada'
+          id="realidade-aumentada"
           imageUrl='./realidade-aumentada-celular.jpeg'
           imageDescription="Imagem representando a realidade aumentada"
           content='Projeções de modelos 3D iterativos no mundo real'
