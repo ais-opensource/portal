@@ -77,7 +77,7 @@ export class Home extends React.Component {
           backgroundColor="#000000"
         />
         <HalfImageHalfTextRight
-          title='Mídia 360'
+          title='Conteúdo 360'
           imageUrl='./oculus.jpeg'
           imageDescription="Óculos de realidade virtual sobre uma mesa"
           content='Filmagem, fotografia e edição de mídias 360'

@@ -9,8 +9,8 @@ export class Videos extends React.Component {
     return (
       <div>
         <PageTitle title="Experimente agora!" />
-        <ItemList type="video" mediaUrl="rafain.mp4" imageUrl='https://s3.amazonaws.com/ais-image-bank/ticket-loko.jpeg' description='Ticket Loko - Rafain Show' {...this.props} />
-        <ItemList type="video" mediaUrl="cataratas.mp4" imageUrl='https://s3.amazonaws.com/ais-image-bank/cataratas.jpeg' description='Cataratas do Iguaçu' {...this.props} />
+        <ItemList type="video" mediaUrl="tUxyD9Ps6P4" imageUrl='https://s3.amazonaws.com/ais-image-bank/ticket-loko.jpeg' description='Ticket Loko - Rafain Show' {...this.props} />
+        <ItemList type="video" mediaUrl="q0YmymE_tgE" imageUrl='https://s3.amazonaws.com/ais-image-bank/cataratas.jpeg' description='Cataratas do Iguaçu' {...this.props} />
       </div>
     )
   }

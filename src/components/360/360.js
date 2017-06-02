@@ -1,7 +1,8 @@
 import React from 'react'
-import { PageTitle } from '../content/PageTitle/PageTitle'
+import { PageSubTitle } from '../content/PageTitle/PageTitle'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
+import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import './360.css'
 
 export class Three60 extends React.Component {
@@ -21,13 +22,18 @@ export class Three60 extends React.Component {
   render() {
     return (
       <div>
-        <PageTitle title="Mídia 360" />
+        <ImageFullWidthWithDescription
+          imageUrl='./oculus.jpeg' title='Conteúdo 360'
+          textContent='Outra frase qualquer aqui'
+        />
+        <PageSubTitle subtitle="Veja algumas de nossas soluções de mídia 360" />
         <HalfImageHalfTextRight
-          title='Google Maps'
-          imageUrl='./google-maps.jpeg'
-          imageDescription="Escritório"
-          content={this._renderGoogleMapsContent()}
+          title='Videos 360'
+          imageUrl='./chateau-world.jpeg'
+          imageDescription="Homem em cima de um morro"
+          content='Transporte emoções por diferentes pontos de vista através de Vídeos 360'
           backgroundColor="#6c698d"
+          buttonUrl='/videos-360'
         />
         <HalfImageHalfTextLeft
           title='Fotos 360'
@@ -36,14 +42,6 @@ export class Three60 extends React.Component {
           content='Construções, paisagens e projetos arquitetônicos mais acessíveis do que nunca'
           backgroundColor="#6c698d"
           buttonUrl='/fotos-360'
-        />
-        <HalfImageHalfTextRight
-          title='Videos 360'
-          imageUrl='./chateau-world.jpeg'
-          imageDescription="Homem em cima de um morro"
-          content='Transporte emoções por diferentes pontos de vista através de Vídeos 360'
-          backgroundColor="#6c698d"
-          buttonUrl='/videos-360'
         />
       </div>
     )

@@ -12,3 +12,12 @@ export class PageTitle extends React.Component {
     )
   }
 }
+
+export const PageSubTitle = (props) => {
+
+  return (
+    <div className="sub-title">
+      {props.subtitle}
+    </div>
+  )
+}
