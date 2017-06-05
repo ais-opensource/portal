@@ -15,7 +15,7 @@ export class RealidadeVirtual extends React.Component {
       <div>
         <ImageFullWidthWithDescription
           imageUrl='./virtual-reality-homem.jpeg' title='Realidade Virtual'
-          textContent='Outra frase qualquer aqui'
+          textContent='Trazendo o mundo virtual para perto de você'
         />
         <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade virtual" />
           <HalfImageHalfTextLeft

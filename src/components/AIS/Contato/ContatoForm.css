@@ -54,3 +54,22 @@
   background-color: black;
   color: #4286f4;
 }
+
+@media screen and (max-width: 420px) {
+
+  .contato-form-header {
+    font-size: 17px;
+  }
+  .contato-label {
+    font-size: 15px;
+    min-width: 100px;
+    text-align: left;
+  }
+
+  .contato-input {
+    width: 300px;
+  }
+  .text-area {
+    width: 300px;
+  }
+}

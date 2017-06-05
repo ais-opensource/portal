@@ -65,7 +65,7 @@ export class Home extends React.Component {
           id="realidade-aumentada"
           imageUrl='./realidade-aumentada-celular.jpeg'
           imageDescription="Imagem representando a realidade aumentada"
-          content='Projeções de modelos 3D iterativos no mundo real'
+          content='Projeções de modelos 3D interativos no mundo real'
           buttonUrl='/realidade-aumentada'
         />
         <HalfImageHalfTextLeft

@@ -30,7 +30,7 @@ export const Footer = ({props}) => {
           <div className="contents-link"><a href="/quem-somos">Contato</a></div>
         </div>
       </footer>
-      <div className="privacidade"><a>Termos de privacidade</a></div>
+      <div className="privacidade"><a href="/privacidade">Termos de privacidade</a></div>
     </div>
   )
 }

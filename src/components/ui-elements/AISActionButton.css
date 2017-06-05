@@ -14,3 +14,14 @@
   background-color: black;
 
 }
+
+@media screen and (max-width: 420px) {
+
+  .ais-action-button {
+    padding: 15px 20px 15px 20px;
+    font-size: 0.6em;
+    margin: 5px;
+    width: 140px;
+  }
+
+}

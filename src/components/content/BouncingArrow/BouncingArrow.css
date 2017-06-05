@@ -5,3 +5,13 @@
   -moz-animation-duration: 5s;
   -moz-animation-delay: 3;
 }
+
+
+@media screen and (max-width: 420px) {
+
+
+  .bouncing-arrow {
+    font-size: 3em;
+  }
+
+}
