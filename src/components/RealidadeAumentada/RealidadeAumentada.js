@@ -3,7 +3,7 @@ import { HalfVideoTextRight } from '../content/HalfVideoTextRight/HalfVideoTextR
 import { HalfVideoTextLeft } from '../content/HalfVideoTextLeft/HalfVideoTextLeft'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { VideoFullWidth } from '../content/VideoFullWidth/VideoFullWidth'
-import { PageTitle, PageSubTitle } from '../content/PageTitle/PageTitle'
+import { PageSubTitle } from '../content/PageTitle/PageTitle'
 import './RealidadeAumentada.css'
 
 export class RealidadeAumentada extends React.Component {
