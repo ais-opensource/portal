@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import * as ReactGA from 'react-ga'
 import { Header } from './Header/Header'
 import { Footer } from './Footer/Footer'
 import { RealidadeAumentada } from '../RealidadeAumentada/RealidadeAumentada'
@@ -22,11 +23,23 @@ import {
 import { Home } from '../Home/Home'
 import './App.css';
 
+function logPageView() {
+  ReactGA.set({
+    page: window.location.pathname + window.location.search
+  })
+
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
+
 class App extends Component {
+
+  componentDidMount() {
+    ReactGA.initialize('UA-92091022-2')
+  }
 
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter onUpdate={logPageView}>
         <div className="App">
           <Header />
             <Route exact path="/" component={Home} />
