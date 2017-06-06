@@ -24,14 +24,14 @@ export class Three60 extends React.Component {
       <div>
         <ImageFullWidthWithDescription
           imageUrl='./oculus.jpeg' title='Conteúdo 360'
-          textContent='Outra frase qualquer aqui'
+          textContent='Demonstre sua estrutura de maneira imersiva'
         />
         <PageSubTitle subtitle="Veja algumas de nossas soluções de mídia 360" />
         <HalfImageHalfTextRight
           title='Videos 360'
           imageUrl='./chateau-world.jpeg'
           imageDescription="Homem em cima de um morro"
-          content='Transporte emoções por diferentes pontos de vista através de Vídeos 360'
+          content='Transporte emoções por diferentes pontos de vista'
           backgroundColor="#6c698d"
           buttonUrl='/videos-360'
         />
@@ -39,7 +39,7 @@ export class Three60 extends React.Component {
           title='Fotos 360'
           imageUrl='./photos.jpeg'
           imageDescription="Câmeras"
-          content='Construções, paisagens e projetos arquitetônicos mais acessíveis do que nunca'
+          content='Construções, paisagens e projetos arquitetônicos no mundo virtual estão mais acessíveis do que nunca'
           backgroundColor="#6c698d"
           buttonUrl='/fotos-360'
         />

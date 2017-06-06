@@ -23,6 +23,7 @@ export class RealidadeAumentada extends React.Component {
               videoUrl='https://www.youtube.com/embed/vsWIk4NAxmI'
               title='Caça Noel'
               buttonUrl='https://play.google.com/store/apps/details?id=com.AIS.ShoppingGO'
+              buttonText='BAIXE AGORA'
               content='Ação de Natal usando RA feita para o Cataratas JL Shopping'
               backgroundColor='#4e6766'
           />
@@ -37,7 +38,7 @@ export class RealidadeAumentada extends React.Component {
             <PageSubTitle subtitle="Outdoor Virtual" />
             <VideoFullWidth
               videoUrl='https://www.youtube.com/embed/cTg5yfdv1u4'
-              buttonUrl="https://play.google.com/store/apps/details?id=com.AIS.WRO"
+              buttonUrl="./outdoorvirtual.pdf"
             />
           </div>
       </div>
