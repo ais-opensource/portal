@@ -34,9 +34,10 @@ export class Serios extends React.Component {
         <Article
           title='Jogos Sérios'
           subheader='Treine a sua equipe com mais segurança e menos custo'
-          body={this.renderConteudo()}
           imageUrl='./treinamento-incendio-fora.png'
-        />
+        >
+          {this.renderConteudo()}
+        </Article>
       </div>
     )
   }

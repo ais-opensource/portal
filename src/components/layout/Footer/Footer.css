@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+.foot-container {
+  display: flex;
+  justify-content: center;
+}
+
 .contents {
   margin: 20px;
 }
@@ -27,6 +32,16 @@
 .contents-title {
   color: #4286f4;
   font-size: 1.44em;
+}
+
+.privacidade {
+  color: white;
+  background-color: black;
+}
+
+.privacidade a {
+  color: #666;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 420px) {

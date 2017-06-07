@@ -1,5 +1,6 @@
 import React from 'react'
-import { PageTitle } from '../content/PageTitle/PageTitle'
+import { PageSubTitle } from '../content/PageTitle/PageTitle'
+import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
 
@@ -12,7 +13,11 @@ export class RealidadeVirtual extends React.Component {
   render() {
     return (
       <div>
-        <PageTitle title="Realidade Virtual" />
+        <ImageFullWidthWithDescription
+          imageUrl='./virtual-reality-homem.jpeg' title='Realidade Virtual'
+          textContent='Trazendo o mundo virtual para perto de você'
+        />
+        <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade virtual" />
           <HalfImageHalfTextLeft
             title='Promoções Turísticas'
             imageUrl='./town-on-rocks-by-sea.jpeg'

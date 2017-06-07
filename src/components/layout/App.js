@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import * as ReactGA from 'react-ga'
 import { Header } from './Header/Header'
 import { Footer } from './Footer/Footer'
 import { RealidadeAumentada } from '../RealidadeAumentada/RealidadeAumentada'
@@ -7,6 +8,7 @@ import { JogosPublicitarios } from '../RealidadeVirtual/JogosPublicitarios/Jogos
 import { Serios } from '../RealidadeVirtual/Serios/Serios'
 import { Maquetes } from '../RealidadeVirtual/Maquetes/Maquetes'
 import { Promocoes } from '../RealidadeVirtual/Promocoes/Promocoes'
+import { Privacidade } from '../Privacidade/Privacidade'
 import { RealidadeVirtual } from '../RealidadeVirtual/RealidadeVirtual'
 import { Three60 } from '../360/360'
 import { Fotos } from '../360/Fotos/Fotos'
@@ -21,11 +23,23 @@ import {
 import { Home } from '../Home/Home'
 import './App.css';
 
+function logPageView() {
+  ReactGA.set({
+    page: window.location.pathname + window.location.search
+  })
+
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
+
 class App extends Component {
+
+  componentDidMount() {
+    ReactGA.initialize('UA-92091022-2')
+  }
 
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter onUpdate={logPageView}>
         <div className="App">
           <Header />
             <Route exact path="/" component={Home} />
@@ -36,6 +50,7 @@ class App extends Component {
             <Route path="/maquetes-digitais" component={Maquetes} />
             <Route path="/jogos-serios" component={Serios} />
             <Route path="/promocoes-turisticas" component={Promocoes} />
+            <Route path="/privacidade" component={Privacidade} />
             <Route path="/quem-somos" component={AIS} />
             <Route path="/360" component={Three60} />
             <Route path="/fotos-360" component={Fotos} />

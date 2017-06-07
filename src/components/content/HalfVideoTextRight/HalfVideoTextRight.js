@@ -4,7 +4,7 @@ import './HalfVideoTextRight.css'
 export class HalfVideoTextRight extends React.Component {
 
   render() {
-    const { title, content, videoUrl, buttonUrl } = this.props
+    const { title, content, videoUrl, buttonUrl, buttonText } = this.props
     const right ={
       backgroundColor: this.props.backgroundColor,
     }
@@ -19,7 +19,7 @@ export class HalfVideoTextRight extends React.Component {
             <h1 className="title">{title}</h1>
             <div className="hrf-content">{content}</div>
             <div className="button-container">
-              <a href={buttonUrl} className="button">SAIBA MAIS</a>
+              <a href={buttonUrl} className="button">{buttonText}</a>
             </div>
           </div>
 

@@ -3,8 +3,9 @@ import './AISActionButton.css'
 export class AISActionButton extends React.Component {
 
   render() {
+    const url = this.props.url ? this.props.url : '#' + this.props.id
     return (
-      <button className="ais-action-button">{this.props.text}</button>
+      <a href={url} className="ais-action-button">{this.props.text}</a>
     )
   }
 }

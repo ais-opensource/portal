@@ -5,15 +5,15 @@ import './Article.css'
 
 export class Article extends React.Component {
     render() {
-      const { title, subheader, body, imageUrl } = this.props
+      const { title, subheader, children, imageUrl } = this.props
       return (
         <div>
-          <ImageFullWidthWithDescription textContent={title} imageUrl={imageUrl}/>
+          <ImageFullWidthWithDescription title={title} textContent={subheader} imageUrl={imageUrl}/>
           <div className="article-subheader">
-            {subheader}
+
           </div>
           <div className="article-body">
-            {body}
+            {children}
           </div>
         </div>
       )

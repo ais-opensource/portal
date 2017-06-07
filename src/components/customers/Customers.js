@@ -4,7 +4,6 @@ import './Customers.css'
 export class Customer extends React.Component {
   render() {
     const { url, name, imageUrl } = this.props;
-    console.log('imageurl', imageUrl)
     return (
       <div className="customer-container">
         <div >
