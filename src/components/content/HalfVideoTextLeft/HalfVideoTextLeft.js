@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
 import './HalfVideoTextLeft.css'
 
 export class HalfVideoTextLeft extends React.Component {
@@ -12,11 +13,17 @@ export class HalfVideoTextLeft extends React.Component {
       <div >
         <div className="half-container">
           <div className="left" style={left}>
-            <div className="title-video-left">{title}</div>
-            <div className="content-video-left">{content}</div>
-            <div className="button-container">
-              <a href={buttonUrl} className="button">SAIBA MAIS</a>
-            </div>
+            <ScrollAnimation animateIn="slideInLeft" offset={-100}>
+              <div className="title-video-left">{title}</div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="slideInLeft" offset={-100}>
+              <div className="content-video-left">{content}</div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="tada" delay={0} offset={0}>
+              <div className="button-container">
+                <a href={buttonUrl} className="button">SAIBA MAIS</a>
+              </div>
+            </ScrollAnimation>
           </div>
           <div className="right">
             <iframe className="video" src={videoUrl}  frameBorder="0" allowFullScreen></iframe>

@@ -21,10 +21,8 @@ export class ContatoForm extends React.Component {
       headers: headers,
       body: JSON.stringify(data)
     }).then((response) => {
-      console.log(response)
       alert('Seu e-mail foi enviado com sucesso!')
     }).catch((error) => {
-      console.log(error)
       alert('ocorreu um erro, por favor, tente mais tarde')
     })
     event.target.nome.value   = ''

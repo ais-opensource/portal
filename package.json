@@ -8,6 +8,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "react": "^15.4.2",
+    "react-animate-on-scroll": "^1.2.1",
     "react-dom": "^15.4.2",
     "react-ga": "^2.2.0",
     "react-redux": "^5.0.3",
