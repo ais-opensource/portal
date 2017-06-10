@@ -13,13 +13,13 @@ export class HalfVideoTextLeft extends React.Component {
       <div >
         <div className="half-container">
           <div className="left" style={left}>
-            <ScrollAnimation animateIn="slideInLeft" offset={-100}>
+            <ScrollAnimation animateIn="slideInLeft"  animateOut="slideOutLeft" offset={-100}>
               <div className="title-video-left">{title}</div>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="slideInLeft" offset={-100}>
+            <ScrollAnimation animateIn="slideInLeft" offset={-100} animateOut="slideOutLeft">
               <div className="content-video-left">{content}</div>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="tada" delay={0} offset={0}>
+            <ScrollAnimation animateIn="tada" delay={0} offset={0} animateOut="slideOutLeft">
               <div className="button-container">
                 <a href={buttonUrl} className="button">SAIBA MAIS</a>
               </div>

@@ -20,13 +20,13 @@ export class HalfImageHalfTextLeft extends React.Component {
       <div id={id}>
         <div className="half-container">
           <div className="left" style={left}>
-            <ScrollAnimation animateIn="slideInLeft" offset={-100}>
+            <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" offset={-100}>
               <div className="title">{title}</div>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="slideInLeft" offset={-100}>
+            <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" offset={-100}>
               <div className="content-image-left">{content}</div>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="tada" delay={0} offset={0}>
+            <ScrollAnimation animateIn="tada" animateOut="slideOutLeft" delay={0} offset={0}>
               <div className="button-container">
                 { buttonUrl ? <Link to={buttonUrl} className="button">SAIBA MAIS</Link> : null}
               </div>
