@@ -7,6 +7,9 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "aos": "^2.1.1",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-animate-on-scroll": "^1.2.1",
     "react-dom": "^15.4.2",

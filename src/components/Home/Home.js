@@ -1,14 +1,22 @@
 import React from 'react'
+import AOS from 'aos'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
 import { Customers } from '../customers/Customers'
 import { AISActionButton } from '../ui-elements/AISActionButton'
-import './Home.css'
+import './Home.css';
+import '../../../node_modules/aos/dist/aos.css';
 export class Home extends React.Component {
 
+  constructor(props) {
+    super(props)
+    AOS.init();
+    console.log(AOS)
+  }
   componentDidMount() {
     window.scrollTo(0,0)
+
   }
 
 
@@ -47,6 +55,7 @@ export class Home extends React.Component {
         url: 'http://www.woodsbar.com.br/fozdoiguacu'
       }
     ]
+
     return (
       <div>
         <ImageFullWidthWithDescription
@@ -60,15 +69,22 @@ export class Home extends React.Component {
 
           </ImageFullWidthWithDescription>
         <Customers customers={customers} />
-        <HalfImageHalfTextRight
+        <HalfImageHalfTextLeft
           title='Realidade Aumentada'
           id="realidade-aumentada"
-          imageUrl='./realidade-aumentada-celular.jpeg'
+          imageUrl='./background-ra.jpg'
           imageDescription="Imagem representando a realidade aumentada"
           content='Projeções de modelos 3D interativos no mundo real'
           buttonUrl='/realidade-aumentada'
-        />
-        <HalfImageHalfTextLeft
+        >
+        <div data-aos="slide-left" data-aos-duration="600">
+          <img className="dinossauro-celular" src='./mockup-celular.png' alt='representação de realidade aumentada' />
+        </div>
+        <div data-aos="zoom-out" data-aos-delay="800">
+          <img className="dinossauro-ra" src='./dinozito.png' alt='imagem 3d representando o objeto virtual de ra' />
+        </div>
+        </HalfImageHalfTextLeft>
+        <HalfImageHalfTextRight
           title='Realidade Virtual'
           imageUrl='./virtual-reality-homem.jpeg'
           imageDescription="Imagem representando a realidade virtual"
@@ -76,7 +92,7 @@ export class Home extends React.Component {
           buttonUrl='/realidade-virtual'
           backgroundColor="#000000"
         />
-        <HalfImageHalfTextRight
+        <HalfImageHalfTextLeft
           title='Conteúdo 360'
           imageUrl='./oculus.jpeg'
           imageDescription="Óculos de realidade virtual sobre uma mesa"

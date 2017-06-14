@@ -18,8 +18,8 @@ export class Customers extends React.Component {
 
   _renderCustomers() {
     const { customers } = this.props;
-    return customers ? customers.map((customer) => {
-      return <Customer imageUrl={customer.imageUrl} name={customer.name} url={customer.url}/>
+    return customers ? customers.map((customer, index) => {
+      return <Customer key={index} imageUrl={customer.imageUrl} name={customer.name} url={customer.url}/>
     }) : null;
   }
   render() {

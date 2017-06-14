@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from '../ScrollAnimation/ScrollAnimation';
 import './HalfImageHalfTextLeft.css'
 
 export class HalfImageHalfTextLeft extends React.Component {
 
+
   render() {
-    const { title, content, imageUrl, buttonUrl, backgroundColor, id } = this.props
+    const { title, content, imageUrl, buttonUrl, backgroundColor, id, children } = this.props
     const imageStyle = {
       backgroundImage: `url('${imageUrl}')`,
       backgroundRepeat: 'no-repeat',
@@ -33,6 +34,7 @@ export class HalfImageHalfTextLeft extends React.Component {
             </ScrollAnimation>
           </div>
           <div className="image-text-left" style={imageStyle}>
+            {children}
           </div>
         </div>
       </div>
