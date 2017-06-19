@@ -11,7 +11,9 @@ export class Home extends React.Component {
 
   constructor(props) {
     super(props)
-    AOS.init();
+    AOS.init({
+      disable: 'mobile'
+    });
 
   }
   componentDidMount() {
