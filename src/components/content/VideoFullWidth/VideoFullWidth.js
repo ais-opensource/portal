@@ -8,12 +8,15 @@ export class VideoFullWidth extends React.Component {
     const { videoUrl, buttonUrl } = this.props
     return (
       <div>
-        <div className="video-full-video-container">
-          <iframe className="video-full-video" src={videoUrl} frameBorder="0" allowFullScreen></iframe>
+      <div className="video-container">
+        <video id="bgvid" playsInline autoPlay muted loop>
+          <source src='./outdoor-virtual.webm' type="video/webm" />
+          <source src='./outdoor-virtual.mp4' type="video/mp4" />
+        </video>
+        <div className="video-children-container">
+          {this.props.children}
         </div>
-        <div className="video-full-button-container">
-          <a href={buttonUrl} className={"video-full-button"}>SAIBA MAIS</a>
-        </div>
+      </div>
       </div>
     )
   }

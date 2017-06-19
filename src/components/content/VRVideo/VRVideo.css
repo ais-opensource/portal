@@ -2,3 +2,15 @@
   width: 100%;
   height: auto;
 }
+
+.video-container {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.video-children-container {
+  position: relative;
+  margin-bottom: 60px;
+}

@@ -3,7 +3,7 @@ import { PageSubTitle } from '../content/PageTitle/PageTitle'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
-
+import { AISActionButton } from '../ui-elements/AISActionButton'
 import './RealidadeVirtual.css'
 
 export class RealidadeVirtual extends React.Component {
@@ -15,8 +15,9 @@ export class RealidadeVirtual extends React.Component {
       <div>
         <ImageFullWidthWithDescription
           imageUrl='./virtual-reality-homem.jpeg' title='Realidade Virtual'
-          textContent='Trazendo o mundo virtual para perto de você'
-        />
+          textContent='Trazendo o mundo virtual para perto de você'>
+          <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+        </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade virtual" />
           <HalfImageHalfTextLeft
             title='Promoções Turísticas'
