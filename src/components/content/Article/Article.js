@@ -1,5 +1,6 @@
 import React from 'react'
 import { ImageFullWidthWithDescription } from '../ImageFullWidthWithDescription/ImageFullWidthWithDescription'
+import { AISActionButton } from '../../ui-elements/AISActionButton'
 import './Article.css'
 
 
@@ -8,7 +9,9 @@ export class Article extends React.Component {
       const { title, subheader, children, imageUrl } = this.props
       return (
         <div>
-          <ImageFullWidthWithDescription title={title} textContent={subheader} imageUrl={imageUrl}/>
+          <ImageFullWidthWithDescription title={title} textContent={subheader} imageUrl={imageUrl}>
+            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+          </ImageFullWidthWithDescription>
           <div className="article-subheader">
 
           </div>

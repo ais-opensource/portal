@@ -12,15 +12,16 @@ export class Home extends React.Component {
   constructor(props) {
     super(props)
     AOS.init();
-    console.log(AOS)
+
   }
   componentDidMount() {
     window.scrollTo(0,0)
-
   }
 
 
+
   render() {
+
     const customers = [
       {
         imageUrl: './logos/logo-itaipu.jpeg',

@@ -20,10 +20,19 @@ import {
   BrowserRouter,
   Route,
 } from 'react-router-dom'
+import createBrowserHistory from 'history/createBrowserHistory'
 import { Home } from '../Home/Home'
 import './App.css';
 
+const history = createBrowserHistory();
+history.listen((location, action) => {
+  console.log('is it happening ?')
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
+
 function logPageView() {
+  console.log('af')
   ReactGA.set({
     page: window.location.pathname + window.location.search
   })
@@ -33,13 +42,14 @@ function logPageView() {
 
 class App extends Component {
 
-  componentDidMount() {
+  constructor(props) {
+    super(props)
     ReactGA.initialize('UA-92091022-2')
   }
 
   render() {
     return (
-      <BrowserRouter onUpdate={logPageView}>
+      <BrowserRouter onUpdate={logPageView} history={history}>
         <div className="App">
           <Header />
             <Route exact path="/" component={Home} />

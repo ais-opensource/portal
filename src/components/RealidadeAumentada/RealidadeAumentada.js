@@ -4,6 +4,7 @@ import { HalfVideoTextLeft } from '../content/HalfVideoTextLeft/HalfVideoTextLef
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { VideoFullWidth } from '../content/VideoFullWidth/VideoFullWidth'
 import { PageSubTitle } from '../content/PageTitle/PageTitle'
+import { AISActionButton } from '../ui-elements/AISActionButton'
 import './RealidadeAumentada.css'
 
 export class RealidadeAumentada extends React.Component {
@@ -16,8 +17,9 @@ export class RealidadeAumentada extends React.Component {
 
           <ImageFullWidthWithDescription
             imageUrl='./realidade-aumentada-celular.jpeg' title='Realidade Aumentada'
-            textContent='Onde o mundo real e o virtual se unem'
-          />
+            textContent='Onde o mundo real e o virtual se unem'>
+              <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+          </ImageFullWidthWithDescription>
           <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade aumentada" />
           <HalfVideoTextRight
               videoUrl='https://www.youtube.com/embed/vsWIk4NAxmI'

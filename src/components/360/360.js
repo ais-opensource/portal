@@ -3,6 +3,7 @@ import { PageSubTitle } from '../content/PageTitle/PageTitle'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
+import { AISActionButton } from '../ui-elements/AISActionButton'
 import './360.css'
 
 export class Three60 extends React.Component {
@@ -24,8 +25,9 @@ export class Three60 extends React.Component {
       <div>
         <ImageFullWidthWithDescription
           imageUrl='./oculus.jpeg' title='Conteúdo 360'
-          textContent='Demonstre sua estrutura de maneira imersiva'
-        />
+          textContent='Demonstre sua estrutura de maneira imersiva'>
+            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+        </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de mídia 360" />
         <HalfImageHalfTextRight
           title='Videos 360'
