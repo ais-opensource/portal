@@ -14,7 +14,7 @@ handleClickEvent(eventName, event) {
   render() {
     const url = this.props.url ? this.props.url : '#' + this.props.id
     return (
-      <a href={url} onClick={this.handleClickEvent.bind(this, this.props.text)} className="ais-action-button">{this.props.text}</a>
+      <a href={url} onClick={this.handleClickEvent.bind(this, this.props.eventType)} className="ais-action-button">{this.props.text}</a>
     )
   }
 }

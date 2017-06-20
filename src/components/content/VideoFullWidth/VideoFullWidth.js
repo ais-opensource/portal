@@ -5,7 +5,6 @@ import './VideoFullWidth.css'
 export class VideoFullWidth extends React.Component {
 
   render() {
-    const { videoUrl, buttonUrl } = this.props
     return (
       <div>
       <div className="video-container">

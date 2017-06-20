@@ -17,22 +17,20 @@ import { AIS } from '../AIS/AIS'
 import { VRImageFullWidth } from '../content/VRImageFullWidth/VRImageFullWidth'
 import { VRVideo } from '../content/VRVideo/VRVideo'
 import {
-  BrowserRouter,
+  Router,
   Route,
-} from 'react-router-dom'
+} from 'react-router'
 import createBrowserHistory from 'history/createBrowserHistory'
 import { Home } from '../Home/Home'
 import './App.css';
 
 const history = createBrowserHistory();
 history.listen((location, action) => {
-  console.log('is it happening ?')
   ReactGA.set({ page: location.pathname });
   ReactGA.pageview(location.pathname);
 });
 
 function logPageView() {
-  console.log('af')
   ReactGA.set({
     page: window.location.pathname + window.location.search
   })
@@ -49,7 +47,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter onUpdate={logPageView} history={history}>
+      <Router onUpdate={logPageView} history={history}>
         <div className="App">
           <Header />
             <Route exact path="/" component={Home} />
@@ -69,7 +67,7 @@ class App extends Component {
             <Route path="/video/:path" component={VRVideo} />
           <Footer />
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }

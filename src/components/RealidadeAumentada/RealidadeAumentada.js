@@ -18,7 +18,7 @@ export class RealidadeAumentada extends React.Component {
           <ImageFullWidthWithDescription
             imageUrl='./realidade-aumentada-celular.jpeg' title='Realidade Aumentada'
             textContent='Onde o mundo real e o virtual se unem'>
-              <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+              <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType="REALIDADE_AUMENTADA_CONTATO"/>
           </ImageFullWidthWithDescription>
           <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade aumentada" />
           <HalfVideoTextRight

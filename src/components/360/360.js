@@ -26,7 +26,7 @@ export class Three60 extends React.Component {
         <ImageFullWidthWithDescription
           imageUrl='./oculus.jpeg' title='Conteúdo 360'
           textContent='Demonstre sua estrutura de maneira imersiva'>
-            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType='ENTRE_EM_CONTATO_360'/>
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de mídia 360" />
         <HalfImageHalfTextRight

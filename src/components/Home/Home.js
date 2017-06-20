@@ -20,8 +20,6 @@ export class Home extends React.Component {
     window.scrollTo(0,0)
   }
 
-
-
   render() {
 
     const customers = [
@@ -66,8 +64,8 @@ export class Home extends React.Component {
           textContent='Criando experiencias de realidade virtual e aumentada para unificar mundos'
           >
           <div className="home-action-buttons-container">
-            <AISActionButton text="EXPERIMENTE AGORA" url="/fotos-360" />
-            <AISActionButton text="SAIBA MAIS" id="realidade-aumentada"/>
+            <AISActionButton text="EXPERIMENTE AGORA" url="/fotos-360" eventType='EXPERIMENTE_AGORA_HOME' />
+            <AISActionButton text="SAIBA MAIS" id="realidade-aumentada" eventType='SAIBA_MAIS_HOME'/>
           </div>
 
           </ImageFullWidthWithDescription>

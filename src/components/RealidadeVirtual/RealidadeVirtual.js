@@ -16,7 +16,7 @@ export class RealidadeVirtual extends React.Component {
         <ImageFullWidthWithDescription
           imageUrl='./virtual-reality-homem.jpeg' title='Realidade Virtual'
           textContent='Trazendo o mundo virtual para perto de você'>
-          <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+          <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType="REALIDADE_VIRTUAL_CONTATO" />
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade virtual" />
           <HalfImageHalfTextLeft

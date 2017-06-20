@@ -10,7 +10,7 @@ export class Article extends React.Component {
       return (
         <div>
           <ImageFullWidthWithDescription title={title} textContent={subheader} imageUrl={imageUrl}>
-            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" />
+            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType='ARTICLE_CONTATO_AGORA'/>
           </ImageFullWidthWithDescription>
           <div className="article-subheader">
 
