@@ -6,7 +6,7 @@ export class HalfVideoTextRight extends React.Component {
 
   render() {
     const { title, content, videoUrl, buttonUrl, buttonText } = this.props
-    const right ={
+    const backgroundColor ={
       backgroundColor: this.props.backgroundColor,
     }
 
@@ -16,7 +16,7 @@ export class HalfVideoTextRight extends React.Component {
           <div className="right">
             <iframe className="video" src={videoUrl} frameBorder="0" allowFullScreen></iframe>
           </div>
-          <div className="left" style={right}>
+          <div className="right-video-right" style={backgroundColor}>
             <ScrollAnimation animateIn="slideInRight" offset={-100} animateOut="slideOutRight">
               <h1 className="title">{title}</h1>
             </ScrollAnimation>

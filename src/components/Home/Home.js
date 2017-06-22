@@ -61,7 +61,7 @@ export class Home extends React.Component {
       <div>
         <ImageFullWidthWithDescription
           imageUrl='./predios-meio-futuristas.jpeg' title='Ambientes virtuais, emoções reais'
-          textContent='Criando experiencias de realidade virtual e aumentada para unificar mundos'
+          textContent='Obtenha vantagens competitivas através experiências tecnológicas memoráveis'
           >
           <div className="home-action-buttons-container">
             <AISActionButton text="EXPERIMENTE AGORA" url="/fotos-360" eventType='EXPERIMENTE_AGORA_HOME' />
