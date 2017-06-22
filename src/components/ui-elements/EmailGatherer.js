@@ -1,13 +1,31 @@
 import React from 'react'
 import './EmailGatherer.css'
 
+const apiUrl = 'https://m8v0zues98.execute-api.us-east-1.amazonaws.com/dev/emailportal'
 
 export class EmailGatherer extends React.Component {
 
   getCustomerEmail(event) {
     event.preventDefault();
     const email = event.target.email.value;
-    console.log('wow, we got the email. and it is', email)
+    const data = {
+      name: this.props.method,
+      sender: event.target.email.value,
+      message: `E-mail vindo de ${this.props.method}`,
+      method: this.props.method,
+    }
+    const headers = new Headers();
+    headers.append('Access-Control-Allow-Origin', '*')
+    fetch(apiUrl, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: headers,
+      body: JSON.stringify(data)
+    }).then((response) => {
+      alert('Seu e-mail foi enviado com sucesso!')
+    }).catch((error) => {
+      alert('ocorreu um erro, por favor, tente mais tarde')
+    })
   }
 
   render() {
