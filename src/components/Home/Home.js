@@ -1,5 +1,6 @@
 import React from 'react'
 import AOS from 'aos'
+import { AISHelmet } from '../utilities/AISHelmet/AISHelmet';
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
@@ -59,6 +60,12 @@ export class Home extends React.Component {
 
     return (
       <div>
+        <AISHelmet
+          imageContent='./predios-meio-futuristas.jpeg'
+          title='AIS - Ambientes Virtuais'
+          description='Obtenha vantagens competitivas através experiências tecnológicas memoráveis'
+          url='http://www.ambientesvirtuais.com'
+        />
         <ImageFullWidthWithDescription
           imageUrl='./predios-meio-futuristas.jpeg' title='Ambientes virtuais, emoções reais'
           textContent='Obtenha vantagens competitivas através experiências tecnológicas memoráveis'

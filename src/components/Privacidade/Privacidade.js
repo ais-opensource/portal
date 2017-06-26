@@ -1,5 +1,6 @@
 import React from 'react'
 import { PageTitle } from '../content/PageTitle/PageTitle'
+import { AISHelmet } from '../utilities/AISHelmet/AISHelmet'
 import './Privacidade.css'
 
 
@@ -8,6 +9,11 @@ export class Privacidade extends React.Component {
   render() {
     return (
       <div>
+        <AISHelmet
+          title='Termos de privacidade AIS'
+          description='Nosso termos de privacidade, para que você saiba o que está sendo analisado'
+          url='http://www.ambientesvirtuais.com/privacidade'
+        />
         <PageTitle title="Políticas de privacidade" />
         <p>
           Nós, da AIS - Ambientes Virtuais (AIS – Ambientes Interativos e Simulações LTDA), estamos comprometidos em resguardar sua privacidade.

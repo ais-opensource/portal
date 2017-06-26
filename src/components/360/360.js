@@ -4,6 +4,7 @@ import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfIm
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { AISActionButton } from '../ui-elements/AISActionButton'
+import { AISHelmet } from '../utilities//AISHelmet/AISHelmet'
 import './360.css'
 
 export class Three60 extends React.Component {
@@ -21,11 +22,20 @@ export class Three60 extends React.Component {
     )
   }
   render() {
+    const imageUrl='./oculus.jpeg'
+    const title='Conteúdo 360'
+    const textContent='Demonstre sua estrutura de maneira imersiva'
     return (
       <div>
+        <AISHelmet
+          imageContent={imageUrl}
+          title={title}
+          description={textContent}
+          url='http://www.ambientesvirtuais.com/videos-360'
+        />
         <ImageFullWidthWithDescription
-          imageUrl='./oculus.jpeg' title='Conteúdo 360'
-          textContent='Demonstre sua estrutura de maneira imersiva'>
+          imageUrl={imageUrl} title={title}
+          textContent={textContent}>
             <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType='ENTRE_EM_CONTATO_360'/>
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de mídia 360" />

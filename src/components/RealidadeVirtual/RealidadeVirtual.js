@@ -4,6 +4,7 @@ import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDesc
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
 import { AISActionButton } from '../ui-elements/AISActionButton'
+import { AISHelmet } from '../utilities/AISHelmet/AISHelmet'
 import './RealidadeVirtual.css'
 
 export class RealidadeVirtual extends React.Component {
@@ -11,11 +12,20 @@ export class RealidadeVirtual extends React.Component {
     window.scrollTo(0,0)
   }
   render() {
+    const imageUrl='./virtual-reality-homem.jpeg'
+    const title='Realidade Virtual'
+    const textContent='Trazendo o mundo virtual para perto de você'
     return (
       <div>
+        <AISHelmet
+          imageContent={imageUrl}
+          title={title}
+          description={textContent}
+          url='http://www.ambientesvirtuais.com/realidade-virtual'
+        />
         <ImageFullWidthWithDescription
-          imageUrl='./virtual-reality-homem.jpeg' title='Realidade Virtual'
-          textContent='Trazendo o mundo virtual para perto de você'>
+          imageUrl={imageUrl} title={title}
+          textContent={textContent}>
           <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType="REALIDADE_VIRTUAL_CONTATO" />
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade virtual" />

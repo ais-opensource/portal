@@ -1,5 +1,6 @@
 import React from 'react'
 import { Article } from '../../content/Article/Article'
+import { AISHelmet } from '../../utilities/AISHelmet/AISHelmet'
 import './Educativo.css'
 
 
@@ -32,12 +33,21 @@ export class Educativo extends React.Component {
       )
     }
     render() {
+      const title='Conteúdo educativo imersivo'
+      const subheader='Aumente o rendimento e a taxa de aprendizado de alunos em até 90%'
+      const imageUrl='./educativo-imersivo.jpeg'
       return (
         <div>
+          <AISHelmet
+            imageContent={imageUrl}
+            title={title}
+            description={subheader}
+            url='http://www.ambientesvirtuais.com/jogos-serios'
+          />
           <Article
-            title='Conteúdo educativo imersivo'
-            subheader='Aumente o rendimento e a taxa de aprendizado de alunos em até 90%'
-            imageUrl='./educativo-imersivo.jpeg'
+            title={title}
+            subheader={subheader}
+            imageUrl={imageUrl}
           >
             {this.renderConteudo()}
           </Article>

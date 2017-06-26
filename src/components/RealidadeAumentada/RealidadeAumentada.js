@@ -5,6 +5,7 @@ import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDesc
 import { VideoFullWidth } from '../content/VideoFullWidth/VideoFullWidth'
 import { AISActionButton } from '../ui-elements/AISActionButton'
 import { PageSubTitle } from '../content/PageTitle/PageTitle'
+import { AISHelmet } from '../utilities/AISHelmet/AISHelmet'
 import './RealidadeAumentada.css'
 
 export class RealidadeAumentada extends React.Component {
@@ -12,12 +13,21 @@ export class RealidadeAumentada extends React.Component {
     window.scrollTo(0,0)
   }
   render() {
+    const imageUrl='./realidade-aumentada-celular.jpeg'
+    const title='Realidade Aumentada'
+    const textContent='Onde o mundo real e o virtual se unem'
     return (
         <div>
-
+          <AISHelmet
+            imageContent={imageUrl}
+            title={title}
+            description={textContent}
+            url='http://www.ambientesvirtuais.com/realidade-aumentada'
+          />
           <ImageFullWidthWithDescription
-            imageUrl='./realidade-aumentada-celular.jpeg' title='Realidade Aumentada'
-            textContent='Onde o mundo real e o virtual se unem'>
+            imageUrl={imageUrl}
+            title={title}
+            textContent={textContent}>
               <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType="REALIDADE_AUMENTADA_CONTATO"/>
           </ImageFullWidthWithDescription>
           <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade aumentada" />

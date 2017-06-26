@@ -1,5 +1,6 @@
 import React from 'react'
 import { Article } from '../../content/Article/Article'
+import { AISHelmet } from '../../utilities/AISHelmet/AISHelmet'
 import './Serios.css'
 
 export class Serios extends React.Component {
@@ -29,12 +30,21 @@ export class Serios extends React.Component {
     )
   }
   render() {
+    const title='Jogos Sérios'
+    const subheader='Treine a sua equipe com mais segurança e menos custo'
+    const imageUrl='./treinamento-incendio-fora.png'
     return (
       <div>
+        <AISHelmet
+          imageContent={imageUrl}
+          title={title}
+          description={subheader}
+          url='http://www.ambientesvirtuais.com/jogos-serios'
+        />
         <Article
-          title='Jogos Sérios'
-          subheader='Treine a sua equipe com mais segurança e menos custo'
-          imageUrl='./treinamento-incendio-fora.png'
+          title={title}
+          subheader={subheader}
+          imageUrl={imageUrl}
         >
           {this.renderConteudo()}
         </Article>

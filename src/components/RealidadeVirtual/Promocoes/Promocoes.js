@@ -1,5 +1,6 @@
 import React from 'react'
 import { Article } from '../../content/Article/Article'
+import { AISHelmet } from '../../utilities/AISHelmet/AISHelmet'
 import './Promocoes.css'
 
 export class Promocoes extends React.Component {
@@ -24,12 +25,21 @@ export class Promocoes extends React.Component {
     )
   }
   render() {
+    const title='Promoções Turísticas'
+    const subheader='Atraia mais clientes para o seu negócio e melhore a experiência turística deles'
+    const imageUrl='./town-on-rocks-by-sea.jpeg'
     return (
       <div>
+        <AISHelmet
+          imageContent={imageUrl}
+          title={title}
+          description={subheader}
+          url='http://www.ambientesvirtuais.com/promocoes-turisticas'
+        />
         <Article
-          title='Promoções Turísticas'
-          subheader='Atraia mais clientes para o seu negócio e melhore a experiência turística deles'
-          imageUrl='./town-on-rocks-by-sea.jpeg'
+          title={title}
+          subheader={subheader}
+          imageUrl={imageUrl}
         >
           {this.renderConteudo()}
         </Article>

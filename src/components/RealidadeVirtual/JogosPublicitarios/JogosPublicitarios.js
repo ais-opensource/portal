@@ -1,6 +1,7 @@
 import React from 'react'
 import { Article } from '../../content/Article/Article'
 import './JogosPublicitarios.css'
+import { AISHelmet } from '../../utilities/AISHelmet/AISHelmet'
 
 export class JogosPublicitarios extends React.Component {
 
@@ -27,12 +28,21 @@ export class JogosPublicitarios extends React.Component {
     )
   }
   render() {
+    const title='Jogos Publicitários'
+    const subheader='Conecte sua marca a sensações únicas através de conteúdo digital em realidade virtual a aumentada'
+    const imageUrl='./jogos-publicitarios.jpeg'
     return (
       <div>
+        <AISHelmet
+          imageContent={imageUrl}
+          title={title}
+          description={subheader}
+          url='http://www.ambientesvirtuais.com/jogos-publicitarios'
+        />
         <Article
-          title='Jogos Publicitários'
-          subheader='Conecte sua marca a sensações únicas através de conteúdo digital em realidade virtual a aumentada'
-          imageUrl='./jogos-publicitarios.jpeg'
+          title={title}
+          subheader={subheader}
+          imageUrl={imageUrl}
         >
           {this.renderConteudo()}
         </Article>
