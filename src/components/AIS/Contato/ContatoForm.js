@@ -11,7 +11,7 @@ export class ContatoForm extends React.Component {
       name: event.target.nome.value,
       sender: event.target.email.value,
       message: event.target.mensagem.value,
-      method: 'FORMULARIO_CONTATO'
+      method: 'EMAIL_GATHERER_FORMULARIO_CONTATO'
     }
     const headers = new Headers();
     headers.append('Access-Control-Allow-Origin', '*')

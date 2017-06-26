@@ -9,9 +9,9 @@ export class EmailGatherer extends React.Component {
     event.preventDefault();
     const email = event.target.email.value;
     const data = {
-      name: this.props.method,
-      sender: event.target.email.value,
-      message: `E-mail vindo de ${this.props.method}`,
+      name: email,
+      sender: email,
+      message: `AE! Alguém entrou ficou interessado na AIS através da seguinte página -> ${this.props.method}`,
       method: this.props.method,
     }
     const headers = new Headers();
@@ -26,13 +26,14 @@ export class EmailGatherer extends React.Component {
     }).catch((error) => {
       alert('ocorreu um erro, por favor, tente mais tarde')
     })
+    event.target.email.value = '';
   }
 
   render() {
     const { label, placeholder, submitText } = this.props;
     return (
       <div className="email-gatherer-container">
-        <form onSubmit={this.getCustomerEmail}>
+        <form onSubmit={this.getCustomerEmail.bind(this)}>
           <div className="email-gatherer-input-container">
             <label className="email-gatherer-input-label" htmlFor="email">{label}</label>
             <input className="email-gatherer-input" type="email" name="email" placeholder={placeholder}/>
