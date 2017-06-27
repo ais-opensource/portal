@@ -35,7 +35,7 @@ export class Educativo extends React.Component {
     render() {
       const title='Conteúdo educativo imersivo'
       const subheader='Aumente o rendimento e a taxa de aprendizado de alunos em até 90%'
-      const imageUrl='./educativo-imersivo.jpeg'
+      const imageUrl='http://ambientesvirtuais.com/educativo-imersivo.jpeg'
       return (
         <div>
           <AISHelmet

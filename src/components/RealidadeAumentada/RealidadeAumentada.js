@@ -13,7 +13,7 @@ export class RealidadeAumentada extends React.Component {
     window.scrollTo(0,0)
   }
   render() {
-    const imageUrl='./realidade-aumentada-celular.jpeg'
+    const imageUrl='http://www.ambientesvirtuais.com/realidade-aumentada-celular.jpeg'
     const title='Realidade Aumentada'
     const textContent='Onde o mundo real e o virtual se unem'
     return (

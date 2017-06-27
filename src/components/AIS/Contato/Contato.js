@@ -8,7 +8,7 @@ import './Contato.css'
 export class Contato extends React.Component {
 
   render() {
-    const imageUrl='./contato.jpg'
+    const imageUrl='http://www.ambientesvirtuais.com/contato.jpg'
     const title='Entre em contato'
     const textContent='Vamos transformar sua ideia em realidade'
     return (

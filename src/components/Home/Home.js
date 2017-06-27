@@ -61,7 +61,7 @@ export class Home extends React.Component {
     return (
       <div>
         <AISHelmet
-          imageContent='./predios-meio-futuristas.jpeg'
+          imageContent='http://ambientesvirtuais.com/predios-meio-futuristas.jpeg'
           title='AIS - Ambientes Virtuais'
           description='Obtenha vantagens competitivas através experiências tecnológicas memoráveis'
           url='http://www.ambientesvirtuais.com'

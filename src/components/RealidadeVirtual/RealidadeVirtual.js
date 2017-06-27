@@ -12,7 +12,7 @@ export class RealidadeVirtual extends React.Component {
     window.scrollTo(0,0)
   }
   render() {
-    const imageUrl='./virtual-reality-homem.jpeg'
+    const imageUrl='http://ambientesvirtuais.com/virtual-reality-homem.jpeg'
     const title='Realidade Virtual'
     const textContent='Trazendo o mundo virtual para perto de você'
     return (

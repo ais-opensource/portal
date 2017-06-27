@@ -30,7 +30,7 @@ export class JogosPublicitarios extends React.Component {
   render() {
     const title='Jogos Publicitários'
     const subheader='Conecte sua marca a sensações únicas através de conteúdo digital em realidade virtual a aumentada'
-    const imageUrl='./jogos-publicitarios.jpeg'
+    const imageUrl='http://ambientesvirtuais.com/jogos-publicitarios.jpeg'
     return (
       <div>
         <AISHelmet

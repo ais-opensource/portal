@@ -27,7 +27,7 @@ export class Promocoes extends React.Component {
   render() {
     const title='Promoções Turísticas'
     const subheader='Atraia mais clientes para o seu negócio e melhore a experiência turística deles'
-    const imageUrl='./town-on-rocks-by-sea.jpeg'
+    const imageUrl='http://ambientesvirtuais.com/town-on-rocks-by-sea.jpeg'
     return (
       <div>
         <AISHelmet

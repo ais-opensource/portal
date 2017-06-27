@@ -9,7 +9,7 @@ export class Videos extends React.Component {
     window.scrollTo(0,0)
   }
   render() {
-    const imageUrl = './predios-meio-futuristas.jpeg'
+    const imageUrl = 'http://www.ambientesvirtuais.com/predios-meio-futuristas.jpeg'
     const title = 'Experimente Agora!'
     const textContent = 'Use nossa plataforma WebVR, onde você pode experimentar sem apps adicionais'
     return (

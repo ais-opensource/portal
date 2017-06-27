@@ -32,7 +32,7 @@ export class Serios extends React.Component {
   render() {
     const title='Jogos Sérios'
     const subheader='Treine a sua equipe com mais segurança e menos custo'
-    const imageUrl='./treinamento-incendio-fora.png'
+    const imageUrl='http://ambientesvirtuais.com/treinamento-incendio-fora.png'
     return (
       <div>
         <AISHelmet
