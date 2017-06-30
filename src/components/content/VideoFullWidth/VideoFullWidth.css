@@ -1,28 +1,23 @@
-.video-full-video-container {
+.video-container {
   width: 100%;
-  height: 800px;
+  height: 60vh;
 }
 
-.video-full-video {
-  width: 100%;
-  height: 100%;
+.video-children-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20vh;
+  background-color: rgba(235, 235, 235, 0.4);
+  padding-top: 50px;
+  width: 60%;
 }
 
-
-.video-full-button-container {
-  margin: 60px;
-
-}
-
-.video-full-button {
-  border-radius: 20px;
-  padding: 40px;
-  color: #9F558C;
-  border: 2px solid #9F558C;
-}
-
-.video-full-button:hover {
-  text-decoration: none;
-  filter: brightness(1.8);
-  color: #000000;
+#bgvid {
+  margin-top: -30px;
+  filter: brightness(85%);
+  min-width: 100%;
+  z-index: -100;
+  top: 0;
+  left: 0;
 }

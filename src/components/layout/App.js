@@ -16,6 +16,7 @@ import { Videos } from '../360/Videos/Videos'
 import { AIS } from '../AIS/AIS'
 import { VRImageFullWidth } from '../content/VRImageFullWidth/VRImageFullWidth'
 import { VRVideo } from '../content/VRVideo/VRVideo'
+import { OutdoorVirtual } from '../OutdoorVirtual/OutdoorVirtual'
 import {
   Router,
   Route,
@@ -65,6 +66,7 @@ class App extends Component {
             <Route path="/videos-360" component={Videos} />
             <Route path="/foto/:path" component={VRImageFullWidth}  />
             <Route path="/video/:path" component={VRVideo} />
+            <Route path="/outdoor-virtual" component={OutdoorVirtual} />
           <Footer />
         </div>
       </Router>

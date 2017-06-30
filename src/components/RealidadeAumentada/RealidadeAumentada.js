@@ -49,7 +49,8 @@ export class RealidadeAumentada extends React.Component {
           <div id="outdoor">
             <PageSubTitle subtitle="Outdoor Virtual" />
             <VideoFullWidth
-              videoUrl='https://www.youtube.com/embed/cTg5yfdv1u4'
+              webmUrl='./outdoor-virtual.webm'
+              mp4Url='./outdoor-virtual.mp4'
               buttonUrl="./outdoorvirtual.pdf"
             >
               <div className="outdoor-button">
