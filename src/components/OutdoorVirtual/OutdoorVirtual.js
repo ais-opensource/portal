@@ -3,6 +3,7 @@ import { VideoFullWidth } from '../content/VideoFullWidth/VideoFullWidth';
 import { AISHelmet } from '../utilities/AISHelmet/AISHelmet';
 import { EmailGatherer } from '../ui-elements/EmailGatherer';
 import { Vantagens } from '../content/Vantagens/Vantagens';
+import { Quote } from '../content/Quote/Quote';
 export class OutdoorVirtual extends React.Component {
 
   render() {
@@ -42,6 +43,7 @@ export class OutdoorVirtual extends React.Component {
           </div>
         </VideoFullWidth>
         <Vantagens vantagens={vantagens}/>
+        <Quote />
       </div>
     )
   }
