@@ -3,6 +3,7 @@ import { HalfVideoTextRight } from '../content/HalfVideoTextRight/HalfVideoTextR
 import { HalfVideoTextLeft } from '../content/HalfVideoTextLeft/HalfVideoTextLeft'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { VideoFullWidth } from '../content/VideoFullWidth/VideoFullWidth'
+import { EmailGatherer } from '../ui-elements/EmailGatherer'
 import { AISActionButton } from '../ui-elements/AISActionButton'
 import { PageSubTitle } from '../content/PageTitle/PageTitle'
 import { AISHelmet } from '../utilities/AISHelmet/AISHelmet'
@@ -28,7 +29,12 @@ export class RealidadeAumentada extends React.Component {
             imageUrl={imageUrl}
             title={title}
             textContent={textContent}>
-              <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType="REALIDADE_AUMENTADA_CONTATO"/>
+              <EmailGatherer
+                label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
+                placeholder="seuemail@provedor.com"
+                submitText="Quero ter uma consultoria gratuita"
+                method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
+              />
           </ImageFullWidthWithDescription>
           <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade aumentada" />
           <HalfVideoTextRight
@@ -48,15 +54,6 @@ export class RealidadeAumentada extends React.Component {
           />
           <div id="outdoor">
             <PageSubTitle subtitle="Outdoor Virtual" />
-            <VideoFullWidth
-              webmUrl='./outdoor-virtual.webm'
-              mp4Url='./outdoor-virtual.mp4'
-              buttonUrl="./outdoorvirtual.pdf"
-            >
-              <div className="outdoor-button">
-                <AISActionButton text="SAIBA MAIS" url="./outdoorvirtual.pdf" />
-              </div>
-            </VideoFullWidth>
           </div>
       </div>
     )

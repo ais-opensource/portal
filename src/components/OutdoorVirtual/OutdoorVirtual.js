@@ -4,6 +4,8 @@ import { AISHelmet } from '../utilities/AISHelmet/AISHelmet';
 import { EmailGatherer } from '../ui-elements/EmailGatherer';
 import { Vantagens } from '../content/Vantagens/Vantagens';
 import { Quote } from '../content/Quote/Quote';
+import './OutdoorVirtual.css'
+
 export class OutdoorVirtual extends React.Component {
 
   render() {
@@ -39,9 +41,18 @@ export class OutdoorVirtual extends React.Component {
           buttonUrl="./outdoorvirtual.pdf"
         >
           <div>
-            <EmailGatherer label="Email" placeholder="seuemail@provedor.com" submitText="Entre em contato" method='EMAIL_GATHERER_FOTOS_360' />
+            <EmailGatherer
+              label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
+              placeholder="seuemail@provedor.com"
+              labelSize="28px"
+              submitText="Quero ter uma consultoria gratuita"
+              method='EMAIL_GATHERER_OUTDOOR_VIRTUAL' />
           </div>
         </VideoFullWidth>
+        <div className="outdoor-virtual-outdoor">
+          <div>Vantagens</div>
+          <img src="https://s3.amazonaws.com/ais-image-bank/trendy.svg" className="outdoor-virtual-outdoor-icon" />
+        </div>
         <Vantagens vantagens={vantagens}/>
         <Quote />
       </div>

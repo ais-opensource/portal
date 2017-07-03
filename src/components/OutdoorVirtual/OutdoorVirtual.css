@@ -1,8 +1,30 @@
-.outdoor-virtual-container  {
-  max-width: 100%;
-  height: auto;
+.outdoor-virtual-container {
+
 }
 
-.lead-form-container {
-  background-color: #f2f2f2;
+
+.outdoor-virtual-outdoor {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  font-weight: 300;
+  color: #797e84;
+  text-shadow: 2px 3px #c2c7ce;
+}
+
+.outdoor-virtual-outdoor-image {
+  width: auto;
+  height: 900px;
+  background-size: cover;
+  position: relative;
+}
+
+.outdoor-virtual-outdoor-icon {
+  width: auto;
+  height: 110px;
+  margin-left: 30px;
 }

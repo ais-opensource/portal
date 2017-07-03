@@ -1,14 +1,28 @@
 .email-gatherer-container {
   width: auto;
   height: 90px;
-  font-size: 1.7em;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
 }
 
 .email-gatherer-input-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: column;
+
 }
+
+.email-gatherer-label {
+  background-color: rgba(0,0,0,0.5);
+  max-width: 50%;
+  color: white;
+  font-weight: 200;
+  padding-top: 5px;
+  margin-right: 10px;
+  height: 100%;
+}
+
 
 .email-gatherer-input-label {
   margin-right: 20px;
@@ -17,20 +31,26 @@
   color: #1e152a;
 }
 
+.email-gatherer-form {
+  margin-left: 20px;
+}
+
 .email-gatherer-input {
-  margin-right: 20px;
+  margin-bottom: 5px;
   border: 0;
-  width: 320px;
+  width: 100%;
   border-radius: 12px;
   text-shadow: 1px 1px white;
-  color: #1e152a;
+  color: #444444;
+  text-align: center;
 }
 
 .email-gatherer-input-submit {
   border-radius: 10px;
-  border: 0;
+  border: 1 solid #000000;
   text-shadow: 1px 1px black;
   color: white;
-  background-color: #1e152a;
+  background-color: #db0000;
   padding: 5px 10px 5px 10px;
+  max-width: 100%;
 }

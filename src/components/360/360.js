@@ -4,6 +4,7 @@ import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfIm
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { AISActionButton } from '../ui-elements/AISActionButton'
+import { EmailGatherer } from '../ui-elements/EmailGatherer'
 import { AISHelmet } from '../utilities//AISHelmet/AISHelmet'
 import './360.css'
 
@@ -36,7 +37,12 @@ export class Three60 extends React.Component {
         <ImageFullWidthWithDescription
           imageUrl={imageUrl} title={title}
           textContent={textContent}>
-            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType='ENTRE_EM_CONTATO_360'/>
+          <EmailGatherer
+            label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
+            placeholder="seuemail@provedor.com"
+            submitText="Quero ter uma consultoria gratuita"
+            method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
+          />
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de mídia 360" />
         <HalfImageHalfTextRight

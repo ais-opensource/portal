@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageFullWidthWithDescription } from '../ImageFullWidthWithDescription/ImageFullWidthWithDescription'
-import { AISActionButton } from '../../ui-elements/AISActionButton'
+import { EmailGatherer } from '../../ui-elements/EmailGatherer'
 import './Article.css'
 
 
@@ -10,7 +10,12 @@ export class Article extends React.Component {
       return (
         <div>
           <ImageFullWidthWithDescription title={title} textContent={subheader} imageUrl={imageUrl}>
-            <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType='ARTICLE_CONTATO_AGORA'/>
+            <EmailGatherer
+              label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
+              placeholder="seuemail@provedor.com"
+              submitText="Quero ter uma consultoria gratuita"
+              method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
+            />
           </ImageFullWidthWithDescription>
           <div className="article-subheader">
 

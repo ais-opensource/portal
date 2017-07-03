@@ -23,7 +23,12 @@ export class Videos extends React.Component {
         <ImageFullWidthWithDescription
           imageUrl={imageUrl} title={title}
           textContent={textContent}>
-            <EmailGatherer label="Email" placeholder="seuemail@provedor.com" submitText="Entre em contato" method='EMAIL_GATHERER_VIDEOS_360' />
+          <EmailGatherer
+            label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
+            placeholder="seuemail@provedor.com"
+            labelSize="28px"
+            submitText="Quero ter uma consultoria gratuita"
+            method='EMAIL_GATHERER_VIDEOS_360' />
         </ImageFullWidthWithDescription>
         <ItemList type="video" mediaUrl="tUxyD9Ps6P4" imageUrl='https://s3.amazonaws.com/ais-image-bank/ticket-loko.jpeg' description='Ticket Loko - Rafain Show' {...this.props} />
         <ItemList type="video" mediaUrl="q0YmymE_tgE" imageUrl='https://s3.amazonaws.com/ais-image-bank/cataratas.jpeg' description='Cataratas do Iguaçu' {...this.props} />

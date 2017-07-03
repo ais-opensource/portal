@@ -3,7 +3,7 @@ import { PageSubTitle } from '../content/PageTitle/PageTitle'
 import { ImageFullWidthWithDescription } from '../content/ImageFullWidthWithDescription/ImageFullWidthWithDescription'
 import { HalfImageHalfTextLeft } from '../content/HalfImageHalfTextLeft/HalfImageHalfTextLeft'
 import { HalfImageHalfTextRight } from '../content/HalfImageHalfTextRight/HalfImageHalfTextRight'
-import { AISActionButton } from '../ui-elements/AISActionButton'
+import { EmailGatherer } from '../ui-elements/EmailGatherer'
 import { AISHelmet } from '../utilities/AISHelmet/AISHelmet'
 import './RealidadeVirtual.css'
 
@@ -26,7 +26,12 @@ export class RealidadeVirtual extends React.Component {
         <ImageFullWidthWithDescription
           imageUrl={imageUrl} title={title}
           textContent={textContent}>
-          <AISActionButton text="ENTRE EM CONTATO AGORA" url="/quem-somos" eventType="REALIDADE_VIRTUAL_CONTATO" />
+            <EmailGatherer
+              label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
+              placeholder="seuemail@provedor.com"
+              submitText="Quero ter uma consultoria gratuita"
+              method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
+            />
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade virtual" />
           <HalfImageHalfTextLeft

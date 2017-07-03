@@ -15,7 +15,7 @@ export class Fotos extends React.Component {
     const textContent = 'Use nossa plataforma WebVR, onde você pode experimentar sem apps adicionais'
     return (
       <div>
-        <AISHelmet
+        <AISHelmet  
           imageContent={imageUrl}
           title={title}
           description={textContent}
@@ -24,7 +24,12 @@ export class Fotos extends React.Component {
         <ImageFullWidthWithDescription
           imageUrl={imageUrl} title={title}
           textContent={textContent}>
-            <EmailGatherer label="Email" placeholder="seuemail@provedor.com" submitText="Entre em contato" method='EMAIL_GATHERER_FOTOS_360' />
+            <EmailGatherer
+              label="Descubra como utilizar a nossa tecnologia para aumentar os seus resultados"
+              placeholder="seuemail@provedor.com"
+              submitText="Quero ter uma consultoria gratuita"
+              method='EMAIL_GATHERER_FOTOS_360'
+            />
         </ImageFullWidthWithDescription>
         <ItemList type="foto" mediaUrl="itaipu-u21-360.jpeg" imageUrl='https://s3.amazonaws.com/ais-image-bank/Screen+Shot+2017-04-11+at+12.10.47.png' description='Itaipu Binacional - U21' {...this.props} />
         <ItemList type="foto" mediaUrl="palio-360.jpeg" imageUrl='https://s3.amazonaws.com/ais-image-bank/Screen+Shot+2017-04-11+at+12.10.24.png' description='Interior Veículo Elétrico' {...this.props} />

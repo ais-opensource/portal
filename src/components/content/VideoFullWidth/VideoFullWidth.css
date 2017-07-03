@@ -7,10 +7,10 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: -20vh;
-  background-color: rgba(235, 235, 235, 0.4);
+  top: -27vh;
   padding-top: 50px;
   width: 60%;
+  height: auto;
 }
 
 #bgvid {
