@@ -23,7 +23,7 @@ export class Three60 extends React.Component {
     )
   }
   render() {
-    const imageUrl='./oculus.jpeg'
+    const imageUrl='https://s3.amazonaws.com/ais-image-bank/oculus.jpeg'
     const title='Conteúdo 360'
     const textContent='Demonstre sua estrutura de maneira imersiva'
     return (
@@ -40,14 +40,14 @@ export class Three60 extends React.Component {
           <EmailGatherer
             label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
             placeholder="seuemail@provedor.com"
-            submitText="Quero ter uma consultoria gratuita"
+            submitText="Quero uma consultoria gratuita"
             method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
           />
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de mídia 360" />
         <HalfImageHalfTextRight
           title='Videos 360'
-          imageUrl='./chateau-world.jpeg'
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/chateau-world.jpeg'
           imageDescription="Homem em cima de um morro"
           content='Transporte emoções por diferentes pontos de vista'
           backgroundColor="#6c698d"
@@ -55,7 +55,7 @@ export class Three60 extends React.Component {
         />
         <HalfImageHalfTextLeft
           title='Fotos 360'
-          imageUrl='./photos.jpeg'
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/photos.jpeg'
           imageDescription="Câmeras"
           content='Construções, paisagens e projetos arquitetônicos no mundo virtual estão mais acessíveis do que nunca'
           backgroundColor="#6c698d"

@@ -29,14 +29,14 @@ export class RealidadeVirtual extends React.Component {
             <EmailGatherer
               label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
               placeholder="seuemail@provedor.com"
-              submitText="Quero ter uma consultoria gratuita"
+              submitText="Quero uma consultoria gratuita"
               method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
             />
         </ImageFullWidthWithDescription>
         <PageSubTitle subtitle="Veja algumas de nossas soluções de realidade virtual" />
           <HalfImageHalfTextLeft
             title='Promoções Turísticas'
-            imageUrl='./town-on-rocks-by-sea.jpeg'
+            imageUrl='https://s3.amazonaws.com/ais-image-bank/town-on-rocks-by-sea.jpeg'
             buttonUrl="/promocoes-turisticas"
             imageDescription="Promoções turísticas"
             content='Possibilite a emoção de passeios turísticos mesmo à distância'
@@ -46,7 +46,7 @@ export class RealidadeVirtual extends React.Component {
           />
           <HalfImageHalfTextRight
             title='Maquetes Virtuais'
-            imageUrl='./maquetevirtual.png'
+            imageUrl='https://s3.amazonaws.com/ais-image-bank/maquetevirtual.png'
             imageDescription="Maquetes Virtuais"
             content='Apresentação de modelos 3D executados em tempo real'
             backgroundColor="#1e152a"
@@ -55,7 +55,7 @@ export class RealidadeVirtual extends React.Component {
           />
           <HalfImageHalfTextLeft
             title='Jogos Publicitários'
-            imageUrl='./jogos-publicitarios.jpeg'
+            imageUrl='https://s3.amazonaws.com/ais-image-bank/jogos-publicitarios.jpeg'
             imageDescription="Jogos Publicitários"
             content='Relacione sua marca com sensações que intensifiquem o consumo'
             backgroundColor="#1e152a"
@@ -64,7 +64,7 @@ export class RealidadeVirtual extends React.Component {
           />
           <HalfImageHalfTextRight
             title='Jogos Sérios'
-            imageUrl='./jogos-serios.jpeg'
+            imageUrl='https://s3.amazonaws.com/ais-image-bank/jogos-serios.jpeg'
             imageDescription="Jogos Sérios"
             content='Simule situações reais improváveis e treine sua equipe'
             backgroundColor="#1e152a"

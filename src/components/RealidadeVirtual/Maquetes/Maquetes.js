@@ -29,7 +29,7 @@ export class Maquetes extends React.Component {
         <Article
           title='Desenvolvimento de maquetes Virtuais'
           subheader='Visualize projetos em tours virtuais'
-          imageUrl='http://ambientesvirtuais.com/maquete-digital.jpeg'
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/maquete-digital.jpeg'
         >
           {this.renderConteudo()}
         </Article>

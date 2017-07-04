@@ -45,7 +45,7 @@ export class OutdoorVirtual extends React.Component {
               label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
               placeholder="seuemail@provedor.com"
               labelSize="28px"
-              submitText="Quero ter uma consultoria gratuita"
+              submitText="Quero uma consultoria gratuita"
               method='EMAIL_GATHERER_OUTDOOR_VIRTUAL' />
           </div>
         </VideoFullWidth>
@@ -54,7 +54,13 @@ export class OutdoorVirtual extends React.Component {
           <img src="https://s3.amazonaws.com/ais-image-bank/trendy.svg" className="outdoor-virtual-outdoor-icon" />
         </div>
         <Vantagens vantagens={vantagens}/>
-        <Quote />
+        <Quote
+          avatarUrl='http://i.dailymail.co.uk/i/pix/2012/08/31/article-2196121-14C1AE8F000005DC-112_306x446.jpg'
+          name='Steve Jobs'
+          job='CEO'
+          company='Apple, Inc'
+          quote='Tive muitas inspirações magníficas com esses piá.'
+        />
       </div>
     )
   }

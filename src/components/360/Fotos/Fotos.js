@@ -10,12 +10,12 @@ export class Fotos extends React.Component {
   }
 
   render() {
-    const imageUrl = './predios-meio-futuristas.jpeg'
+    const imageUrl = 'https://s3.amazonaws.com/ais-image-bank/predios-meio-futuristas.jpeg'
     const title = 'Experimente Agora!'
     const textContent = 'Use nossa plataforma WebVR, onde você pode experimentar sem apps adicionais'
     return (
       <div>
-        <AISHelmet  
+        <AISHelmet
           imageContent={imageUrl}
           title={title}
           description={textContent}
@@ -27,7 +27,7 @@ export class Fotos extends React.Component {
             <EmailGatherer
               label="Descubra como utilizar a nossa tecnologia para aumentar os seus resultados"
               placeholder="seuemail@provedor.com"
-              submitText="Quero ter uma consultoria gratuita"
+              submitText="Quero uma consultoria gratuita"
               method='EMAIL_GATHERER_FOTOS_360'
             />
         </ImageFullWidthWithDescription>

@@ -47,7 +47,7 @@ export class Educativo extends React.Component {
           <Article
             title={title}
             subheader={subheader}
-            imageUrl={imageUrl}
+            imageUrl='https://s3.amazonaws.com/ais-image-bank/educativo-imersivo.jpeg'
           >
             {this.renderConteudo()}
           </Article>

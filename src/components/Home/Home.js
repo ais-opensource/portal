@@ -67,7 +67,7 @@ export class Home extends React.Component {
           url='http://www.ambientesvirtuais.com'
         />
         <ImageFullWidthWithDescription
-          imageUrl='./predios-meio-futuristas.jpeg' title='Ambientes virtuais, emoções reais'
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/predios-meio-futuristas.jpeg' title='Ambientes virtuais, emoções reais'
           textContent='Obtenha vantagens competitivas através experiências tecnológicas memoráveis'
           >
           <div className="home-action-buttons-container">
@@ -94,7 +94,7 @@ export class Home extends React.Component {
         </HalfImageHalfTextLeft>
         <HalfImageHalfTextRight
           title='Realidade Virtual'
-          imageUrl='./virtual-reality-homem.jpeg'
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/virtual-reality-homem.jpeg'
           imageDescription="Imagem representando a realidade virtual"
           content='Desenvolvimento de aplicações em realidade virtual para melhorar a experiência do usuário.'
           buttonUrl='/realidade-virtual'
@@ -102,7 +102,7 @@ export class Home extends React.Component {
         />
         <HalfImageHalfTextLeft
           title='Conteúdo 360'
-          imageUrl='./oculus.jpeg'
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/oculus.jpeg'
           imageDescription="Óculos de realidade virtual sobre uma mesa"
           content='Filmagem, fotografia e edição de mídias 360'
           buttonUrl='/360'

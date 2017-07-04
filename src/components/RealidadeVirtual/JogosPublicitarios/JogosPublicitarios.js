@@ -42,7 +42,7 @@ export class JogosPublicitarios extends React.Component {
         <Article
           title={title}
           subheader={subheader}
-          imageUrl={imageUrl}
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/jogos-publicitarios.jpeg'
         >
           {this.renderConteudo()}
         </Article>

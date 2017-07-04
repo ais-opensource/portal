@@ -32,7 +32,7 @@ export class RealidadeAumentada extends React.Component {
               <EmailGatherer
                 label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
                 placeholder="seuemail@provedor.com"
-                submitText="Quero ter uma consultoria gratuita"
+                submitText="Quero uma consultoria gratuita"
                 method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
               />
           </ImageFullWidthWithDescription>
@@ -52,9 +52,14 @@ export class RealidadeAumentada extends React.Component {
             content='A Páscoa Virtual é uma ação de Marketing Tecnológica para Shoppings e lojas de chocolate'
             backgroundColor='#a07e39'
           />
-          <div id="outdoor">
-            <PageSubTitle subtitle="Outdoor Virtual" />
-          </div>
+          <HalfVideoTextRight
+              videoUrl='https://www.youtube.com/embed/cTg5yfdv1u4'
+              title='Outdoor Virtual'
+              buttonUrl='/outdoor-virtual'
+              buttonText='SAIBA MAIS'
+              content='Disponibilize alta interação com seus anúncios'
+              backgroundColor='#a07e39'
+          />
       </div>
     )
   }

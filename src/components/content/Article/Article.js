@@ -13,7 +13,7 @@ export class Article extends React.Component {
             <EmailGatherer
               label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
               placeholder="seuemail@provedor.com"
-              submitText="Quero ter uma consultoria gratuita"
+              submitText="Quero uma consultoria gratuita"
               method='EMAIL_GATHERER_OUTDOOR_VIRTUAL'
             />
           </ImageFullWidthWithDescription>

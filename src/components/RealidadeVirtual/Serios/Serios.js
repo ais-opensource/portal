@@ -44,7 +44,7 @@ export class Serios extends React.Component {
         <Article
           title={title}
           subheader={subheader}
-          imageUrl={imageUrl}
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/treinamento-incendio-fora.png'
         >
           {this.renderConteudo()}
         </Article>

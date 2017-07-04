@@ -27,7 +27,7 @@ export class Videos extends React.Component {
             label="Descubra como utilizar a tecnologia para aumentar os seus resultados"
             placeholder="seuemail@provedor.com"
             labelSize="28px"
-            submitText="Quero ter uma consultoria gratuita"
+            submitText="Quero uma consultoria gratuita"
             method='EMAIL_GATHERER_VIDEOS_360' />
         </ImageFullWidthWithDescription>
         <ItemList type="video" mediaUrl="tUxyD9Ps6P4" imageUrl='https://s3.amazonaws.com/ais-image-bank/ticket-loko.jpeg' description='Ticket Loko - Rafain Show' {...this.props} />

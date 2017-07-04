@@ -9,7 +9,8 @@ export class EmailGatherer extends React.Component {
     event.preventDefault();
     const email = event.target.email.value;
     const data = {
-      name: name,
+      name: event.target.name.value,
+      tel: event.target.tel.value,
       sender: email,
       message: `AE! Alguém entrou ficou interessado na AIS através da seguinte página -> ${this.props.method}`,
       method: this.props.method,
@@ -41,7 +42,7 @@ export class EmailGatherer extends React.Component {
           <form onSubmit={this.getCustomerEmail.bind(this)}>
             <div className="email-gatherer-input-container">
               <input type="text" className="email-gatherer-input" name="name" placeholder="José da Silva" required/>
-              <input type="tel" className="email-gatherer-input" name="telefone" placeholder="(11) 99999-9999" required/>
+              <input type="tel" className="email-gatherer-input" name="tel" placeholder="(11) 99999-9999" required/>
               <input className="email-gatherer-input" type="email" name="email" placeholder={placeholder} required/>
               <input type="submit" value={submitText} className="email-gatherer-input-submit"/>
             </div>

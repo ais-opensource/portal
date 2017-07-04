@@ -39,7 +39,7 @@ export class Promocoes extends React.Component {
         <Article
           title={title}
           subheader={subheader}
-          imageUrl={imageUrl}
+          imageUrl='https://s3.amazonaws.com/ais-image-bank/town-on-rocks-by-sea.jpeg'
         >
           {this.renderConteudo()}
         </Article>
